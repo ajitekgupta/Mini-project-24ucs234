@@ -1,7 +1,7 @@
 # Project Report: Explainable AI in Intelligent Transportation Systems (XAI-ITS)
 
 **Project Title:** XAI-ITS Scenario Lab: Dialogue Goal Classification and Explainable Decision Support  
-**Academic Context:** B.Tech Computer Science & Engineering — Mini Project / BTP  
+**Academic Context:** B.Tech Computer Science & Engineering — Mini Project  
 **Repository:** `traffic-dialogue-ai`  
 
 ---

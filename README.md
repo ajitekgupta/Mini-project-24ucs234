@@ -24,8 +24,8 @@ For the local web interface, open `http://127.0.0.1:8765` in your browser. Press
   source page locations and pending review status.
 - `data/proposed_scenarios/`: ten separately authored additions; excluded
   from retrieval unless explicitly enabled.
-- `data/labeling_guide.md`: paraphrase of the two faculty-supplied reference
-  photos and examples of ambiguous dialogue purposes.
+- `data/labeling_guide.md`: guidelines for the seven dialogue purposes,
+  decision questions, and examples of ambiguous cases.
 - `src/retrieve.py`: deterministic TF-IDF cosine retrieval, implemented with
   the Python standard library so offline demos need no packages.
 - `src/dialogue_rules.py`: cautious, inspectable baseline for the dialogue
@@ -64,7 +64,7 @@ model in `models/`. Five-fold cross-validation holds out whole original
 cases. The current draft result is **50% accuracy and 0.392 macro F1 on 22
 cases**. It has no training examples for inquiry, eristics, or mixed
 dialogue, and its probabilities are not calibrated. This is a development
-result, not a final BTP accuracy claim. See the report in `models/` for
+result, not a final production accuracy claim. See the report in `models/` for
 every held-out prediction.
 
 Before final training, review `data/training_labels_draft.csv` with the
@@ -108,8 +108,8 @@ python3 scripts/evaluate.py
 ```
 
 The 12 evaluation prompts are author-created. Label agreement on them is a
-development check, not an independent estimate of accuracy. For BTP results,
-ask a supervisor to review labels, add paraphrases and harder cases, and
+development check, not an independent estimate of accuracy. For further evaluation,
+review labels, add paraphrases and harder cases, and
 keep the test set separate from retrieval records. A full human review of
 generated dialogue and explanation quality is still required.
 
