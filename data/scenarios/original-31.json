@@ -1,0 +1,31 @@
+{
+  "internal_id": "original-31",
+  "number": 31,
+  "origin": "original_report",
+  "title": "Integrating public transportation.",
+  "situation": "Integrating public transportation.",
+  "entities": "1. Public Transportation Vehicles 2. Traffic Management Infrastructure",
+  "communication_type": "Vehicle to Infrastructure",
+  "description": "Integrationofpublictransportationsystemswithtrafficmanagementinfrastructureinvolvesleveragingtech- nology to improve the efficiency, reliability, and accessibility of public transit while also optimizing traffic flow and reducing congestion. This integration may motivate more people to use the public transportation system due to its timeliness, thereby helping to reduce the number of vehicles on the road and ultimately easing traffic congestion.",
+  "dialogue_prompts": "1. Is their a conflict? No 2. Is their a common problem to be solved? NO 3. Is the reason good? No. 4. Info-Seeking : Understanding User Needs and identifying traffic patterns",
+  "source_proposed_solutions": "",
+  "peas": "31.7.1 Performance Measure 1. Transit Reliability 2. Traffic Congestion Reduction 3. Accessible Public Transportation 31.7.2 Enviornment 4. Road Network 5. Public Transit Infrastructure 31.7.3 Actuators 6. Traffic Signals 7. Transit Signal Priority(TSP) : These systems are a type of actuator used to give priority to buses or other forms of public transit at signalized intersections. 31.7.4 Sensors 8. Traffic Cameras 9. Vehicle Detection Sensors 10. GPS Devices 11. Communication Network Sensors",
+  "cascading_problems": "",
+  "other_sections": {
+    "implementation": "TSP(TrafficSignalPriority)systemsinterfacewithtrafficsignalcontrollerstosendrequestsfortransit priority treatment. Traffic Signal Controllers may be equipped with TSP-specific software or modules that can interpret incoming requests from transit vehicles and adjust signal timings accordingly."
+  },
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      39,
+      40
+    ]
+  }
+}

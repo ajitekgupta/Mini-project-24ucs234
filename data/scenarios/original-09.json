@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-09",
+  "number": 9,
+  "origin": "original_report",
+  "title": "Prioritized vehicle has entered a road stretch must be a provided least congestion possible in its route.",
+  "situation": "Prioritized vehicle has entered a road stretch must be a provided least congestion possible in its route.",
+  "entities": "1. Priority Vehicle 2. Traffic signals 3. Other Vehicles in the route",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication and Inter Traffic Signal Communication.",
+  "description": "Priority Vehicle is following a path and path ahead must be either diverted or cleared out for the same. Route must be selected which offers least congestion to priority vehicle and creating least disturbance to congestion situation on the route.",
+  "dialogue_prompts": "Is there a conflict? No, priority vehicle is just seeking a route which will we offer least congestion. Is there a common problem to be solved? No, only the priority vehicle is concerned.",
+  "source_proposed_solutions": "1. Priority Vehicle informs the traffic signal on entry that it is a priority vehicle and its route. 2. Above traffic signal conveys the message to traffic signals ahead in the route to either lower intake or clear out a lane. 3. Trafficsignalnetworkdecidesifroutehashightraffic,thenadedicatedroutebeprovidedandinformed by nearest traffic signal. 4. Trafficsignalsintheroute,informothervehiclesenteringorleavingtheroadstretchtokeepcongestion on minimum in a lane.",
+  "peas": "1. Performance Measure - The route which will be provided to priority vehicle should be with least congestion and if possible, a lane must be clear for them. 2. Environment - A priority vehicle is on the move and thus the route must be cleared for its swift and smooth movement. 3. Actuator - Traffic signal transmitter, Lane changing mechanism in vehicles. 4. Sensor - Receivers in vehicle, Priority vehicle detection sensor.",
+  "cascading_problems": "1.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      11
+    ]
+  }
+}

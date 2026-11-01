@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-39",
+  "number": 39,
+  "origin": "proposed_addition",
+  "title": "Vehicle positioning sources disagree about which of two parallel roads the vehicle occupies.",
+  "situation": "Vehicle positioning sources disagree about which of two parallel roads the vehicle occupies.",
+  "entities": "Connected vehicle and its navigation system. Roadside positioning units. Localization consistency service. Route guidance service.",
+  "communication_type": "Vehicle-to-Roadside Infrastructure Communication; Inter Infrastructure Communication.",
+  "description": "A vehicle travels where an elevated road and a lower service road run close together. Its satellite-based position is matched to one road, but roadside observations indicate the other. The two roads have different permitted movements. The guidance system must resolve the location uncertainty before issuing a road-specific maneuver or claiming that the vehicle missed a turn.",
+  "dialogue_prompts": "Is there a conflict? There is conflicting evidence about location, rather than a known conflict between road users. Is there a common problem to be solved? Yes. The vehicle and guidance service need a sufficiently supported road assignment before selecting a maneuver. Is it theoretical? No. An incorrect assignment could produce an inappropriate instruction while the vehicle continues moving. Dialogue type Inquiry: the participants compare independent observations and their reliability. The outcome can remain unresolved if the evidence does not support one road.",
+  "source_proposed_solutions": "Detect the disagreement and retain both candidate road assignments with their evidence and timestamps. Request additional observations such as roadside beacon identity, elevation evidence, odometry or a recognized road feature. Compare the evidence without treating several copies of one source as independent confirmation. While the road assignment is unresolved, withhold the uncertain road-specific maneuver and state the positioning limitation; the driving system continues according to its own operating procedure. Once the assignment is supported, recompute guidance and explain which observations resolved the discrepancy.",
+  "peas": "Correct road assignment on reviewed examples; time to resolve disagreement; unsupported maneuver instructions avoided; uncertainty reported accurately. Nearby parallel or vertically separated roads with imperfect satellite reception and intermittent roadside positioning coverage. Navigation display, route guidance update service and uncertainty notification transmitter. Satellite position receiver, odometry sensor, roadside beacon receiver and available elevation or road-feature observations.",
+  "cascading_problems": "An outdated map disagrees with otherwise consistent position observations. A roadside beacon is associated with the wrong road in the infrastructure database. Position estimates oscillate between roads and require a stable decision before guidance resumes.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario39.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 39
+  }
+}

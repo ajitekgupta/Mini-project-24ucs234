@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-19",
+  "number": 19,
+  "origin": "original_report",
+  "title": "Pedestrian/Animal tries to cross over the road disregarding traffic signal",
+  "situation": "Pedestrian/Animal tries to cross over the road disregarding traffic signal",
+  "entities": "1. Pedestrian 2. Vehicles 3. Traffic Signal",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication, Between Pedestrian and Detector present roadside",
+  "description": "A pedestrian/animal is trying to cross over the road, i.e. obstruction is present on the road but will be cleared soon, possibly with cooperation with vehicles.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, because vehicles were moving in their green time and pedestrian’s enter the road stretch. 2. Is Reason Good? No, Pedestrians are scheduled to get due time for themselves at identified locations to cross over. 3. Is settlement good? Yes, in most cases, pedestrians will be able to cross over swiftly thus causing minor deceleration for vehicles, which is better looked over.",
+  "source_proposed_solutions": "1. Pedestriantriestocrossovertheroad,wholeonusofsafetyofeitherlieswithvehiclesduetopedestrians’ negligence. 2. Detector tells traffic signal that a pedestrian is attempting to cross over the road. 3. Traffic signal informs all vehicles in the relevant road stretch to slow down if they are in high speed or atleast be more careful towards the person. 4. Detector on finding pedestrian crossed over, informs the traffic signal that issue is resolved, normal driving can be resumed.",
+  "peas": "1. Performance Measure - Pedestrian must cross over the road swiftly and safely, all the way causing minimum deceleration/braking to vehicles on the road stretch. 2. Environment - A pedestrian has entered a road stretch with green time for vehicles causing vehicles to brake abruptly. 3. Actuators - Vehicles’ braking system (if autonomous), Traffic signal notification transmitter, Roadside detector’s transmitter 4. Sensors - Roadside detector, Vehicles’ reception sensor, Traffic signal’s reception sensor",
+  "cascading_problems": "",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      24
+    ]
+  }
+}

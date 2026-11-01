@@ -1,0 +1,14 @@
+[
+  {"name":"unreceived report","prompt":"A connected vehicle sends an obstruction alert, but the traffic signal has not received it. What should they communicate?","acceptable":["information seeking"]},
+  {"name":"confirmed report and shared choice","prompt":"A road obstruction has been confirmed by a vehicle and a traffic signal. They need to decide how to coordinate warnings for approaching vehicles.","acceptable":["deliberation"]},
+  {"name":"parking allocation","prompt":"Two vehicles both want the same parking space and need to settle who may use it first.","acceptable":["negotiation"]},
+  {"name":"disputed claim","prompt":"One driver denies that a warning was sent, while the signal controller believes it was sent. The controller tries to resolve this disagreement.","acceptable":["persuasion"]},
+  {"name":"contradictory observations","prompt":"Two sensors give contradictory reports about whether a lane is blocked. Operators investigate which report is accurate.","acceptable":["inquiry"]},
+  {"name":"antagonistic exchange","prompt":"Two drivers shout insults and argue just to win after a parking disagreement.","acceptable":["eristics"]},
+  {"name":"two-stage exchange","prompt":"A vehicle asks whether the signal received its hazard alert; after receipt is confirmed, they decide how to coordinate a warning.","acceptable":["mixed"]},
+  {"name":"underspecified","prompt":"A vehicle is near a crossing.","acceptable":["unclear"]},
+  {"name":"rail crossing coordination","prompt":"A train is approaching a crossing. The traffic operator and signal need to decide how to coordinate road messages.","acceptable":["deliberation"]},
+  {"name":"pedestrian status request","prompt":"A bus driver does not know whether pedestrians have cleared the crossing and asks the signal for an update.","acceptable":["information seeking"]},
+  {"name":"new resource conflict","prompt":"Two emergency support vehicles both want the same charging space and negotiate an order.","acceptable":["negotiation"]},
+  {"name":"unverified road state","prompt":"Two reports disagree about whether road construction has ended. The operator will investigate what caused the discrepancy.","acceptable":["inquiry"]}
+]

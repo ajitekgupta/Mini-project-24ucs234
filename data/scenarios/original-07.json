@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-07",
+  "number": 7,
+  "origin": "original_report",
+  "title": "One vehicle wants to overtake another vehicle",
+  "situation": "One vehicle wants to overtake another vehicle",
+  "entities": "1. Vehicle 1 2. Vehicle 2",
+  "communication_type": "Inter Vehicles Communication",
+  "description": "Vehicle 1 may want to overtake vehicle 2 in a congested road, therefore request message is emitted.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, the car at the back wants to speed up while the one in the front is moving at its own pace and comfort. 2. Is Reason Good? Yes, one who wants to overtake must be provided a chance to maintain harmony.",
+  "source_proposed_solutions": "1. Vehicles at the back request vehicles to clear the overtaking lane. 2. Vehicles in the front clear out the lane and also informs vehicles in its front to possibly do the same, letting the requesting vehicle to overtake.",
+  "peas": "1. PerformanceMeasure-Thevehicledesiringtoovertakeothers’mustbeprovidedafreepassifpossible at the earliest while causing least inconvenience in terms of deceleration/braking to other vehicles. 2. Environment - A congested road where two vehicles are one-behind-each-other and the one behind is trying to overtake the other. 3. Actuator - Acceleration/Deceleration Mechanism in vehicles, Transmitters in vehicles. 4. Sensor - Receiver in the vehicles, Proximity sensor in vehicles. Receiver/Transmitter in the traffic signals can be utilized if implemented using IoVTS.",
+  "cascading_problems": "1. Due to high congestion, clearing out a lane, even for a small span of time may not always be possible (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      9
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-28",
+  "number": 28,
+  "origin": "original_report",
+  "title": "Traffic Signals Not Adjusting for High-Demand Periods",
+  "situation": "Traffic Signals Not Adjusting for High-Demand Periods",
+  "entities": "1. Traffic signal systems 2. High-demand periods (e.g., rush hours, major events) 3. Motorists, pedestrians",
+  "communication_type": "Traffic Signal-to-Vehicle, Traffic Signal-to-Pedestrian",
+  "description": "Traffic signals failing to adapt to high-demand periods cause congestion and delays.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, there is a conflict as traffic signals fail to adjust during rush hours, causing congestion. Is reason good? Yes, the reason for conflict is valid as it leads to increased travel times and delays. Persuasion: Traffic signals need to dynamically adjust signal timings to prioritize main traffic flows during rush hours, reducing congestion and delays.",
+  "source_proposed_solutions": "1. Implement adaptive signal control technology. 2. Increase signal timing flexibility during peak periods. 3. Enhance public transportation options to reduce private vehicle usage.",
+  "peas": "1. Performance Measure: Improved traffic flow during peak periods. 2. Environment: Urban areas with traffic congestion. 3. Actuator: Traffic signal systems. 4. Sensor: Traffic monitoring systems.",
+  "cascading_problems": "1. Increased travel times and delays. 2. Traffic congestion and bottlenecks. 3. Negative impacts on local businesses.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      33,
+      34
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-08",
+  "number": 8,
+  "origin": "original_report",
+  "title": "Vehicles on a road stretch are in different speeds creating unnecessary delays.",
+  "situation": "Vehicles on a road stretch are in different speeds creating unnecessary delays.",
+  "entities": "1. Vehicles.",
+  "communication_type": "Inter Vehicle Communication",
+  "description": "Vehicles on road are in different speed configurations thus slowing some vehicles behind even though speed limit is higher.",
+  "dialogue_prompts": "1. Is there a conflict? No, the issue is caused by collective clumsiness of different vehicles. 2. Is there a common problem to be solved? Yes, every vehicle needs to make effort so the traffic flow becomes uniform thus safer and faster. 3. Is it theoretical? No, the problem will be resolved only by collective efforts of all vehicles.",
+  "source_proposed_solutions": "1. Vehicles at the back request vehicles in the front to speed up. 2. Vehicles which are been requested to speed up, request vehicles even in their front to speed up and upon acknowledgement, they do the same. 3. Vehiclesaheadinformrequestingvehiclestoslowdownduetosomereason(coveredasotherscenarios).",
+  "peas": "1. Performance Measure - The traffic flow must be maintained as uniformly as possible. A free or easy- to-free lane must be present on the road to allow fast moving vehicles. 2. Environment - A congested road which is not allowing vehicles to speed up thus letting the congestion in status quo. 3. Actuator - Acceleration and Lane Change mechanism in the vehicles, transmitter in the vehicles, Transmitter in the Traffic signal (if implemented as IoVTS) 4. Sensor - Receiver in vehicles, Traffic flow detection system in traffic signal (if implemented as IoVTS)",
+  "cascading_problems": "1. There is no possible lane to clear out, probably due to high congestion (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      10
+    ]
+  }
+}

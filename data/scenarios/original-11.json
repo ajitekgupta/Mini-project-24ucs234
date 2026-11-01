@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-11",
+  "number": 11,
+  "origin": "original_report",
+  "title": "Train Crossing is closing down affecting traffic flow bidirectionally.",
+  "situation": "Train Crossing is closing down affecting traffic flow bidirectionally.",
+  "entities": "1. Vehicles 2. Traffic Signals 3. Railway Crossing Signal",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication and Inter Traffic Signals Communication and Traffic Signal Communication with Railway Crossing Signal",
+  "description": "Train is approaching thus railway crossing will be closing, but traffic signals continue indicating green light thus adding to unnecessary idle time for vehicles which happen to move in unaffected route.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, railway crossing is specifically affecting some routes and other routes are not allowing the traffic flow in accordance with upcoming congestion situation 2. Is reason good? Yes, The routes which will be closed for railway crossing, will eventually causing spill over effects of vehicles blocking other routes as well.",
+  "source_proposed_solutions": "1. Railway crossing signal tells traffic signals the route shut down timing and duration. 2. Receivingtrafficsignalinformsothertrafficsignalsattheintersectiontoadjustgreensignalduration. 3. The traffic signal further requests other traffic signals at the intersection to allow higher green time, so that route closing soon can be cleared to maximum and later the intersection could be free. 4. As soon as railway signal tells that train has passed and route is available, traffic signal requests green time for the route so the accumulated traffic may move.",
+  "peas": "1. Performance Measure - The routes which will be closing down for railway crossing must be allowed longer green time so most of the vehicles can move over so lesser congestion for the time being of road stretch being closed. 2. Environment - Due to an expected train, route will be shut down, thus vehicles might spill over to other routes blocking them while waiting for the route to open. We are considering moment before route shuts down. 3. Actuators - Railway crossing indicator/signal, Transmitters at traffic signal 4. Sensors - Receivers at the traffic signals.",
+  "cascading_problems": "1. Priority vehicles to be notified (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      13,
+      14
+    ]
+  }
+}

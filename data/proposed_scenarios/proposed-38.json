@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-38",
+  "number": 38,
+  "origin": "proposed_addition",
+  "title": "A driver does not acknowledge a takeover request when automated driving reaches its operating boundary.",
+  "situation": "A driver does not acknowledge a takeover request when automated driving reaches its operating boundary.",
+  "entities": "Vehicle operating in an automated driving mode. Driver expected to take over control. Driver monitoring and takeover management systems. Roadside assistance coordinator and nearby road users.",
+  "communication_type": "Vehicle-to-Driver Communication; Vehicle-to-Infrastructure Communication; Inter Vehicle Communication where available.",
+  "description": "An automated vehicle approaches the end of the conditions in which its current driving mode can operate. It issues a takeover request, but the driver gives no acknowledgement and the monitoring system cannot confirm readiness. The vehicle must distinguish a request being delivered from control actually being accepted and use its defined fallback procedure if takeover does not occur.",
+  "dialogue_prompts": "Is there a conflict? No intentional conflict is established. The system requires a change of control, but the driver's ability to respond is unknown. Is there a common problem to be solved? Yes. The vehicle and the driver need a confirmed control state while the operating boundary approaches. Is it theoretical? No. The system must act within its remaining operating capability and cannot assume that a silent driver has accepted control. Dialogue type Information seeking followed by deliberation if the driver responds. If there is no response, a defined fallback state transition replaces further dialogue; consent is not invented.",
+  "source_proposed_solutions": "Detect the approaching operating boundary and issue the configured visual, audible and tactile takeover prompts. Check both explicit acknowledgement and the available driver-readiness evidence; keep control ownership explicit. Transfer control only when the required readiness and acceptance conditions are satisfied. If those conditions are not met, execute the vehicle's defined minimal-risk fallback within its current capability, using a suitable refuge only if one is verified reachable. Communicate the vehicle's condition to nearby traffic where supported and request assistance when the fallback procedure calls for it.",
+  "peas": "No unacknowledged control transfer; timely fallback initiation; correctly reported control ownership; assistance request completion. An automated vehicle nearing an operating boundary with an unresponsive or unavailable driver and surrounding traffic. Takeover display, audible and tactile alerts, braking and steering controls, hazard indicators and assistance transmitter. Driver monitoring sensor, takeover acknowledgement input, vehicle capability monitor and surrounding-object sensors.",
+  "cascading_problems": "The driver responds after fallback has begun, requiring an explicit reassessment before any control transfer. The preferred refuge becomes unavailable and another fallback option must be assessed. A monitoring fault produces uncertain readiness information and must be reported as uncertainty.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario38.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 38
+  }
+}

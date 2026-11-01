@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-01",
+  "number": 1,
+  "origin": "original_report",
+  "title": "A vehicle looking to stop its vehicle has found a suitable space",
+  "situation": "A vehicle looking to stop its vehicle has found a suitable space",
+  "entities": "1. Vehicle 1 (One which is trying to stop) 2. Vehicle 2 (One which is just behind the stopping vehicle) 3. Rest of the vehicles in the road stretch.",
+  "communication_type": "Inter Vehicle Communication",
+  "description": "Vehicles are moving on road, one of which is moving with intention to stop by roadside",
+  "dialogue_prompts": "1. Is there a conflict? Yes, vehicle 1 is trying to stop while vehicle 2 is in its own motion. 2. Is Reason Good? No, vehicle 1 is trying to stop by roadside which breaks traffic flow 3. Is settlement good? Case - Yes Vehicle 2 agrees to let the other vehicle to slow down and eventually stop and even change lane. Case - No Vehicle 2 disregards the requests and continues its own motion.",
+  "source_proposed_solutions": "1. Vehicle 1 informs Vehicle 2, it is willing to change lane if required, gradually slowing speed and stop by roadside. 2. Vehicle 2 is in high speed thus warning Vehicle to either not slow down or come into its lane. 3. Otherwise Vehicle 2 informs other vehicles behind itself in a cascading fashion to slow down and itself does the same. 4. Vehicle 1, if can’t spot another location, tries to communicate with Vehicle 2 that Vehicle 1 will be attempting a stopping maneuver anyways.",
+  "peas": "1. PerformanceMeasure-Ifvehicle1wantstostopbyroadside,vehicle2mustbeinformedattheearliest time, and acknowledgement must be communicated to maintain road safety 2. Environment - A vehicle on a congested road is trying to stop while been followed by other vehicles. 3. Actuator - Transmitter in vehicles, Lane change and deceleration mechanism in vehicles 4. Sensor - Receiver in vehicles and traffic signals, proximity sensor",
+  "cascading_problems": "1. Vehicle wants a parking spot (intentional stoppage) but there is no parking spot available in the road stretch ahead (Discussed). 2. Vehicle 2 or some other wants to stop at that spot itself (Discussed). 3. Vehicles behind vehicle 2 are warning not to attempt a stopping maneuver (this can be done with IoVTS to prioritize) (Resolution in implementation). 4. Vehicle 1 has stopped but dynamic traffic signal recording traffic flow does not know the situation (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      1,
+      2
+    ]
+  }
+}

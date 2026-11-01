@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-18",
+  "number": 18,
+  "origin": "original_report",
+  "title": "Green light for vehicles stopping pedestrians even as there is no vehicle on road",
+  "situation": "Green light for vehicles stopping pedestrians even as there is no vehicle on road",
+  "entities": "1. Pedestrian 2. Traffic Signals",
+  "communication_type": "Between Pedestrian and Traffic Signal",
+  "description": "Trafficsignalisindicatinggreenlightforvehicles,eventhoughnovehicleispresentontheroadstretch,thus pedestrian requests traffic signal to allow it to cross.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, because pedestrians want to cross over the road and traffic signal stops them. 2. Is reason good? Yes, because there is no vehicle on road yet the traffic signal is stopping the pedestrians.(persuasion)",
+  "source_proposed_solutions": "1. Pedestrian arrives at the traffic signal and requests traffic signal to cross the road. 2. Traffic signal tells other traffic signals at the intersection to take up green time, as they require, due to lower traffic with itself.",
+  "peas": "1. Performance Measure - Pedestrians must be allowed to cross the road at the earliest and should not be denied crossing if there is no vehicle on the road. 2. Environment - There is no vehicle on the road but pedestriancs are waiting to cross over the road due to denial by traffic signal. 3. Actuator - Traffic light updation mechanism and its trigger 4. Sensor - Button or Detection sensor on traffic light to detect if pedestrians want to cross.",
+  "cascading_problems": "1. Person may try to cross the road at some place other than the zebra crossing thus going unnoticed by traffic signal.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      23
+    ]
+  }
+}

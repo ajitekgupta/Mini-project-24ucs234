@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-04",
+  "number": 4,
+  "origin": "original_report",
+  "title": "Static Obstruction is removed but traffic flow is not resumed.",
+  "situation": "Static Obstruction is removed but traffic flow is not resumed.",
+  "entities": "1. Obstruction removing authority. 2. Traffic signal at end of road from which vehicles enter it into targeted side. 3. Other traffic signal at the intersection.",
+  "communication_type": "Inter Traffic Signal or Inter Vehicle & Traffic Signal (depending on implementation)",
+  "description": "Obstruction on the road stretch has been resolved and this information needs to be updated with the traffic signal so vehicles can be allowed to enter.",
+  "dialogue_prompts": "1. Is there a conflict? No, removing a static obstruction is not a conflict between anyone. 2. Is there a common problem to be solved? Yes, removal of static obstruction is seeked by vehicles and traffic signals both. 3. Is it theoretical? Yes, information of obstruction must be updated so as to allow normal traffic flow ob the road.",
+  "source_proposed_solutions": "1. Responsible authority conveys a message to relevant traffic signal that obstruction is resolved entirely or partially. 2. Targeted traffic signal informs all other traffic signal on the intersection and updates time period to allow vehicles to enter the road stretch.",
+  "peas": "1. Performance Measure - Upon removal of the obstruction, the update must be done at the earliest so traffic flow can be maintained on the route 2. Environment - A road with some sort of obstruction been removed by concerned authority. 3. Actuator - 4. Sensor - Obstruction Sensor in traffic signals/roadside",
+  "cascading_problems": "1. Obstruction maybe dynamic (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      6
+    ]
+  }
+}

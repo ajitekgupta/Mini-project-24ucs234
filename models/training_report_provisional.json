@@ -1,0 +1,205 @@
+{
+  "status": "provisional_experiment",
+  "trained_at_utc": "2026-10-12T15:03:21.441065+00:00",
+  "examples": 22,
+  "class_support": {
+    "negotiation": 5,
+    "deliberation": 9,
+    "information seeking": 5,
+    "persuasion": 3
+  },
+  "grouped_folds": 5,
+  "accuracy": 0.5,
+  "macro_f1": 0.392,
+  "classification_report": {
+    "deliberation": {
+      "precision": 0.5333333333333333,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.6666666666666666,
+      "support": 9.0
+    },
+    "information seeking": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "negotiation": {
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1-score": 0.5,
+      "support": 5.0
+    },
+    "persuasion": {
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4,
+      "support": 3.0
+    },
+    "accuracy": 0.5,
+    "macro avg": {
+      "precision": 0.425,
+      "recall": 0.4055555555555555,
+      "f1-score": 0.3916666666666666,
+      "support": 22.0
+    },
+    "weighted avg": {
+      "precision": 0.43787878787878787,
+      "recall": 0.5,
+      "f1-score": 0.44090909090909086,
+      "support": 22.0
+    }
+  },
+  "confusion_labels": [
+    "deliberation",
+    "information seeking",
+    "negotiation",
+    "persuasion"
+  ],
+  "confusion_matrix": [
+    [
+      8,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "per_case": [
+    {
+      "case_number": "1",
+      "expected": "negotiation",
+      "predicted": "negotiation"
+    },
+    {
+      "case_number": "2",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "3",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "5",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "6",
+      "expected": "information seeking",
+      "predicted": "negotiation"
+    },
+    {
+      "case_number": "7",
+      "expected": "persuasion",
+      "predicted": "persuasion"
+    },
+    {
+      "case_number": "8",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "9",
+      "expected": "information seeking",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "10",
+      "expected": "information seeking",
+      "predicted": "persuasion"
+    },
+    {
+      "case_number": "12",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "13",
+      "expected": "negotiation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "14",
+      "expected": "information seeking",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "15",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "16",
+      "expected": "negotiation",
+      "predicted": "negotiation"
+    },
+    {
+      "case_number": "17",
+      "expected": "persuasion",
+      "predicted": "information seeking"
+    },
+    {
+      "case_number": "18",
+      "expected": "persuasion",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "19",
+      "expected": "negotiation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "20",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "29",
+      "expected": "deliberation",
+      "predicted": "information seeking"
+    },
+    {
+      "case_number": "30",
+      "expected": "negotiation",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "31",
+      "expected": "information seeking",
+      "predicted": "deliberation"
+    },
+    {
+      "case_number": "32",
+      "expected": "deliberation",
+      "predicted": "deliberation"
+    }
+  ],
+  "training_input": "original report situation + description only; dialogue answer text excluded",
+  "sklearn_version": "1.9.1",
+  "limitations": [
+    "The labels are provisional unless faculty_approved_type was filled in.",
+    "The dataset is very small and class support is uneven.",
+    "The grouped folds hold out complete original cases, but no independent external dataset is available.",
+    "Model probabilities are not calibrated."
+  ]
+}

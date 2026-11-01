@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-05",
+  "number": 5,
+  "origin": "original_report",
+  "title": "Traffic signal has turned green but vehicles have not commenced motion.",
+  "situation": "Traffic signal has turned green but vehicles have not commenced motion.",
+  "entities": "1. Traffic signal 2. Vehicles waiting for traffic signal to turn green.",
+  "communication_type": "Inter Vehicle & Traffic Signal",
+  "description": "Traffic signal turns green after dynamic time due to vehicles are in shut down state thus it needs to ignite and start motion introducing idle time for vehicles behind.",
+  "dialogue_prompts": "Is there a conflict? No, the problem is caused by collective clumsiness of multiple vehicles. Is there a common problem to be resolved? Yes, all vehicles wants to come into uniform motion at the earliest time after green signal. Is it theoretical? No, every vehicle must start acceleration if possible so that caterpillar effect of slowing down vehicles does not occur.",
+  "source_proposed_solutions": "1. Traffic signal informs vehicles at the front to commence motion before it turns green, i.e. enhanced yellow light functionality or forced motion of vehicles by traffic light itself. 2. Vehiclesinformothervehiclesinthebacktostartmotioninacascadingfashiononreceptionofmessage or those vehicles are also directly informed by traffic signal.",
+  "peas": "1. Performance Measure - As soon as the green signal occurs at the traffic signal, all vehicles must start acceleration. 2. Environment - A Traffic signal is about to turn green and many vehicles are waiting for it. 3. Actuator - Transmitter in traffic signal and vehicles, acceleration mechanism in vehicles. 4. Sensor - Receiver in vehicles.",
+  "cascading_problems": "1.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      7
+    ]
+  }
+}

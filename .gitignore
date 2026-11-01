@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+.DS_Store
+
+# Personal preparation notes (kept local, excluded from Git)
+MEETING_DEMOS.md
+PRESENT_TO_SIR.md
+RUN_FROM_DESKTOP.md
+*.pdf

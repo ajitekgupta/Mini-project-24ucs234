@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-25",
+  "number": 25,
+  "origin": "original_report",
+  "title": "Inefficient Coordination Between Traffic Signals and Road Construction Activities",
+  "situation": "Inefficient Coordination Between Traffic Signals and Road Construction Activities",
+  "entities": "1. Traffic signal systems. 2. Road construction activities. 3. Motorists.",
+  "communication_type": "Traffic Signal-to-Construction Activity and Traffic Signal-to-Motorist.",
+  "description": "Inefficient coordination between traffic signals and road construction activities causes delays and congestion for motorists. Effective communication is essential to minimize disruptions and ensure smooth traffic flow in construction zones.",
+  "dialogue_prompts": "1. Is there a Conflict? Yes. Inefficient coordination causes delays and congestion. Is Reason good? Yes. Impacts traffic flow and inconveniences motorists. Persuasion: Efficient communication is crucial to minimize disruptions and ensure smooth traffic flow.",
+  "source_proposed_solutions": "1. Implement real-time communication systems between traffic signals and construction crews. 2. Establish protocols for coordination meetings between signal operators and construction managers. 3. Utilizedynamicmessagesignsandmobileappstoalertmotoristsaboutconstructionzonesinadvance.",
+  "peas": "1. Performance Measure - Minimized traffic delays and congestion, improved safety. 2. Environment - Roadways under construction, intersections, congested areas. 3. Actuator - Communication systems, dynamic message signs, mobile apps. 4. Sensor - Traffic monitoring, construction activity monitoring, vehicle detection.",
+  "cascading_problems": "1. Increased congestion and delays, safety hazards, negative impacts on local businesses.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      30,
+      31
+    ]
+  }
+}

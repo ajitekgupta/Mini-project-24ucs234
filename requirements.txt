@@ -1,0 +1,2 @@
+# Offline CLI and local web app use only the Python standard library.
+# For PDF source re-extraction, see requirements-data.txt.

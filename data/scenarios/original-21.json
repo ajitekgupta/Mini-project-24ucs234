@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-21",
+  "number": 21,
+  "origin": "original_report",
+  "title": "Two vehicles are attempting to park at same spot when vehicle in front has crossed the spot.",
+  "situation": "Two vehicles are attempting to park at same spot when vehicle in front has crossed the spot.",
+  "entities": "1. Vehicles 2. Traffic Signal",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication, Between Pedestrian and Detector present roadside",
+  "description": "Two vehicles are trying to park at the same spot but the vehicle in front has already moved over the space partially but wants to back up and park while vehicle at the back has entered the parking space.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, because two vehicles are trying to occupy same spot. 2. Is Reason Good? No, because vehicle in the front has already moved ahead and the one in the back has moved into space, thus vehicle in the front is unjustifiably requesting the other to get out of the space for it. 3. Is Settlement Good? Case - Yes Thevehicleinthefronthasacceptedtheconditionandmovedaheadfindingotherspace. (Negotiation) Case - No Thevehicleinthefrontisarguingoverthespacewhileithasavehiclemovedinpartially,mightrequire intervention of traffic authorities to prevent road rage incidents. (Eristics)",
+  "source_proposed_solutions": "",
+  "peas": "1. Performance Measure - Resolving the issue by convincing either vehicle to give up the space and give it a new space or let the authorities intervene to clear out the congestion and its possibilities at the earliest time. 2. Environment - Road which has two vehicles trying to enter a parking space while adjacent spaces are filled. Also other vehicles are on the road thus creating a possibility of congestion. 3. Actuator - Transmitter in the parking space sensor, Willingness transmitting sensor in either vehicles. 4. Sensor-Detectionreceptorintheparkingspacesensor,Willingnessacceptingmechanisminthevehicle, Reception sensor in the traffic signal/network.",
+  "cascading_problems": "1. Vehicle 1 may not always agree to move to next stop. 2. Vehicle 1 may have certain special priveledge to park at the spot.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      26
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-27",
+  "number": 27,
+  "origin": "original_report",
+  "title": "Limited Prioritization of Eco-Friendly Transportation Modes at Traffic Signals",
+  "situation": "Limited Prioritization of Eco-Friendly Transportation Modes at Traffic Signals",
+  "entities": "1. Traffic signal systems controlling intersections. 2. Eco-friendly transportation modes, such as electric vehicles (EVs) and bicycles. 3. Motorists, cyclists, and pedestrians using eco-friendly transportation modes.",
+  "communication_type": "Traffic Signal-to-Vehicle and Traffic Signal-to-Pedestrian Communication",
+  "description": "Traffic signals may not adequately prioritize eco-friendly transportation modes, such as electric vehicles or bicycles, which can discourage their use and limit their potential to reduce carbon emissions and promote sustainable transportation options.",
+  "dialogue_prompts": "1. Conflict? Yes. Limited prioritization of eco-friendly modes may discourage their use. Reason Valid? Yes. Promoting eco-friendly transportation is crucial for sustainability. Persuasion: Traffic signals should prioritize eco-friendly modes to encourage their adoption.",
+  "source_proposed_solutions": "1. Implement sensor technologies to detect and prioritize eco-friendly transportation modes at intersec- tions. 2. Introduce dedicated lanes or signal phases for electric vehicles and bicycles to improve their flow and safety at intersections. 3. Educatemotoristsontheimportanceofaccommodatingeco-friendlytransportationusersandpromot- ing sustainable mobility practices.",
+  "peas": "1. PerformanceMeasure-Increasedusageofeco-friendlytransportationmodes,reducedcarbonemissions, improved urban air quality. 2. Environment - Urban intersections, areas with traffic congestion and pollution. 3. Actuator - Sensor technologies, signal timing adjustments, dedicated lanes. 4. Sensor - Vehicle detection systems, traffic monitoring technologies.",
+  "cascading_problems": "1. Decreased usage of eco-friendly transportation modes due to limited prioritization at traffic signals, hindering efforts to reduce carbon emissions and promote sustainable urban mobility. 2. Increased safety risks for cyclists and pedestrians using eco-friendly transportation modes if traffic signals do not adequately accommodate their needs and behaviors. 3. Negativeimpactsonpublichealthandairqualityasaresultofcontinuedrelianceontraditional, fossil fuel-powered vehicles instead of eco-friendly alternatives.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      32,
+      33
+    ]
+  }
+}

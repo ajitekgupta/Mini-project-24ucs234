@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-15",
+  "number": 15,
+  "origin": "original_report",
+  "title": "Many vehicles are forced to wait longer than usual time after green light appears.",
+  "situation": "Many vehicles are forced to wait longer than usual time after green light appears.",
+  "entities": "1. Traffic Signals 2. Vehicles",
+  "communication_type": "Inter Vehicle & Traffic Signals Communication",
+  "description": "A vehicle maybe required by traffic signal to free up space for priority vehicles or overtaking vehicles or to de-congest further routes, adding to waiting time of the vehicle all throughout its route.",
+  "dialogue_prompts": "1. Is there a conflict? No, the issue is caused as a result of following guidelines of the traffic management. 2. Is there a common problem to be solved? Yes,priorityvehiclesaretobeletmovingandvehicleswhicharesloweddownneedstobecompensated for. 3. Is it theoretical? No, Traffic signal needs to allot faster route or higher priority to vehicles which are slowed down to be compensated for their inconvenience and settle out the congestion created in the traffic flow.",
+  "source_proposed_solutions": "1. Vehicle tells traffic signals on arrival that it has waited fairly long to reach the place. 2. Traffic signal network tries to keep the vehicle’s movement as smooth as possible. 3. Traffic signal tries to update the route to shorten inconvenience.",
+  "peas": "1. Performance Measure - vehicles slowed down due to arrival of priority vehicles, needs to be fastened up so as to allow congestion caused to be reduced. 2. Environment-Apriorityvehiclecrossedbutasaspill-over/side-effectothervehiclesweresloweddown and changed lanes which disturbed the entire traffic flow thus they need to return back to normal. 3. Actuator - Priority vehicles’ transmitter, Acceleration/Deceleration mechanism on vehicles, Traffic Signal’s Transmitter 4. Sensors - Reception sensors in the vehicles ( lane change request and deceleration request ), Priority Vehicle arrival/leaving detection sensors.",
+  "cascading_problems": "1. Somevehiclesmaybeprioritizedwithoutdueconsiderationofitspurpose,liketaxisshouldbeexcluded from this, as they trip frequently on similar paths.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      18,
+      19
+    ]
+  }
+}

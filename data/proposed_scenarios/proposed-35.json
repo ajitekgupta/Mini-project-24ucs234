@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-35",
+  "number": 35,
+  "origin": "proposed_addition",
+  "title": "Electric vehicles compete for charging capacity after the station's available power is reduced.",
+  "situation": "Electric vehicles compete for charging capacity after the station's available power is reduced.",
+  "entities": "Electric vehicles waiting for or receiving charge. Charging station scheduler. Charging units and station power meter. Station operator and electricity capacity service.",
+  "communication_type": "Vehicle-to-Charging Infrastructure Communication; Charging Infrastructure-to-Capacity Service Communication.",
+  "description": "A charging station receives a reduced power allowance while several vehicles have charging reservations. There are enough physical charging bays, but insufficient electrical capacity to meet every requested charging rate. Vehicles have different battery levels, connector requirements and declared departure times. The scheduler must revise charging allocations and explain why a vehicle receives a lower rate or a later start.",
+  "dialogue_prompts": "Is there a conflict? Yes. The vehicles request charging allocations whose combined power exceeds the station's current allowance. Is the reason good? The requests reflect travel needs, but declared urgency must be assessed using the station's published allocation policy and available evidence. Is settlement good? Yes, if the station offers feasible charging slots or reduced rates and users can accept an alternative. Unverified departure claims must not silently override the queue policy. Dialogue type Negotiation: the station and vehicles seek an allocation under a shared power constraint. Information seeking establishes compatibility and the energy actually requested.",
+  "source_proposed_solutions": "Confirm the current power allowance, charger availability and connector compatibility. Collect each vehicle's requested energy, reported battery level and departure preference, marking unverified information explicitly. Compute a schedule that stays within the power allowance and follows the configured fairness and reservation policy. Offer revised slots or rates, explain the constraints affecting each offer and record acceptance or cancellation. Recalculate when a session ends or the allowance changes; recommend another reachable station only when range and availability are supported by current information.",
+  "peas": "Total allocated power stays within the allowance; requested energy delivered; waiting time; allocation fairness under the stated policy. A charging station with multiple bays, compatible charging units, reserved sessions and a changing electrical power allowance. Charger power controllers, reservation update service, queue display and vehicle notification transmitter. Station power meter, charger connection sensors, charging session meter and receiver for vehicle battery reports.",
+  "cascading_problems": "A reserved vehicle does not arrive, leaving a slot unused until its reservation expires. A charger disconnects unexpectedly and its remaining energy request must be rescheduled. Several stations simultaneously redirect vehicles to one station, creating another capacity shortage.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario35.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 35
+  }
+}

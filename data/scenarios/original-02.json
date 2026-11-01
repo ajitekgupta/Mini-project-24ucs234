@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-02",
+  "number": 2,
+  "origin": "original_report",
+  "title": "Pothole or some static obstruction is present in a road stretch blocking a lane.",
+  "situation": "Pothole or some static obstruction is present in a road stretch blocking a lane.",
+  "entities": "1. Vehicles in a road stretch. 2. Vehicles attempting to enter the road stretch. 3. Traffic signal at end of road from which vehicles enter it into targeted side.",
+  "communication_type": "Inter Vehicle and Traffic Signal Communication and Inter Vehicle Communication",
+  "description": "Vehicles moving have observed an obstruction on the road blocking some of the lanes of targeted side. Targeted side refers to the side of the road on which vehicle is moving.",
+  "dialogue_prompts": "1. Is there a conflict? No, the issue caused by uncontrolled entity/force. 2. Is there a common problem to be solved? Yes, if a lane is blocked, lower number of vehicles entering will cause lower congestion to handle benefiting both vehicles and traffic signals. 3. Is it theoretical? No, lane blocking information must be passed immediately so vehicles can adjust their routes accord- ingly.",
+  "source_proposed_solutions": "1. Vehicle moving has observed a static obstruction due to which some lanes, this message is conveyed to the traffic signal at the entry end and vehicles which are behind it. 2. Traffic signal receives message to stop more vehicles to stop entering into it from already entered vehicles. 3. Vehicles receiving information from vehicles in front that there is obstruction, either change lanes (if a lane is accessible).",
+  "peas": "1. Performance Measure - Lane with an obstruction must be blocked immediately thus vehicles should not enter it at any point of time and this information must be passed. 2. Environment - An obstruction on the lane is blocking it and vehicles are moving on the road stretch. 3. Actuator - Transmitter in Vehicles and Traffic Signals, Deceleration and lane changing mechanism in the vehicles. 4. Sensor - Receiver in vehicles, Obstruction detection sensor in the traffic signal",
+  "cascading_problems": "1. Resolution of the problem is not informed as no vehicle is allowed to enter (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      3,
+      4
+    ]
+  }
+}

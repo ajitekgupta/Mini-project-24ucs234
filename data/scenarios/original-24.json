@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-24",
+  "number": 24,
+  "origin": "original_report",
+  "title": "Slow-Moving Agricultural Vehicles Sharing Roads",
+  "situation": "Slow-Moving Agricultural Vehicles Sharing Roads",
+  "entities": "1. Slow-moving agricultural vehicles (tractors, harvesters, etc.). 2. Faster-moving traffic (cars, trucks, motorcycles, etc.).",
+  "communication_type": "Vehicle-to-Vehicle Communication, Vehicle-to-Infrastructure Communication",
+  "description": "Slow-moving agricultural vehicles often share roads with faster traffic, leading to potential safety hazards and disruptions in traffic flow. Effective communication and coordination between these vehicles are crucial to ensure safe and efficient road usage.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, there is potential for conflict as slow-moving agricultural vehicles share roads with faster traffic, leading to safety hazards and disruptions in traffic flow. Is reason good? Yes, the reason for conflict is the difference in speed and size between agricultural vehicles and faster traffic. Persuasion: Effective communication and coordination between slow-moving agricultural vehicles and faster traffic are essential to ensure safe and efficient road usage.",
+  "source_proposed_solutions": "1. Implementsmartroadinfrastructurethatdetectsthepresenceofslow-movingagriculturalvehiclesand communicates this information to faster traffic to prevent rear-end collisions. 2. Provide education and training for both agricultural vehicle operators and faster traffic drivers on safe driving practices and effective communication strategies. 3. Develop mobile applications or smart devices for agricultural vehicles to communicate their presence and intentions to faster traffic in real-time.",
+  "peas": "1. Performance Measure - Safe and efficient road usage, reduced risk of accidents and collisions involving slow-moving agricultural vehicles. 2. Environment - Roads shared by slow-moving agricultural vehicles and faster traffic, with potential safety hazards and disruptions in traffic flow. 3. Actuator - Communication systems in vehicles and road infrastructure, education and training pro- grams. 4. Sensor - Detection systems for slow-moving agricultural vehicles, real-time traffic data collection.",
+  "cascading_problems": "1. Increased risk of rear-end collisions as faster traffic approaches slow-moving agricultural vehicles with- out adequate warning or space to maneuver. 2. Trafficcongestionandfrustrationamongfaster-movingvehiclesstuckbehindslow-movingagricultural vehicles on narrow or winding roads. 3. Safety hazards for agricultural vehicle operators due to aggressive or impatient behavior from faster traffic attempting to overtake in unsafe conditions.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      29,
+      30
+    ]
+  }
+}

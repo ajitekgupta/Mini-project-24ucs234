@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XAI-ITS • Scenario Lab</title>
+  <style>
+    :root { color-scheme: light; --ink:#172b37; --muted:#58707b; --line:#d9e5e9; --teal:#007e75; --teal-deep:#07574f; --pale:#edf7f5; --sand:#fff8ec; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f3f7f8; color:var(--ink); font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .shell { width:min(1080px, calc(100% - 32px)); margin:0 auto; padding:30px 0 64px; }
+    .top { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px; }
+    .brand { font-weight:800; letter-spacing:.04em; font-size:14px; color:var(--teal-deep); }
+    .badge { border:1px solid #a8d6ce; color:var(--teal-deep); background:#e7f5f2; border-radius:999px; padding:5px 12px; font-size:12px; font-weight:700; }
+    h1 { font-size:clamp(30px,4.5vw,48px); line-height:1.12; letter-spacing:-.04em; margin:0 0 10px; max-width:780px; }
+    .lead { max-width:760px; color:var(--muted); margin:0 0 26px; }
+    .panel { background:white; border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 30px rgba(16,63,74,.045); padding:24px; }
+    label { display:block; font-weight:700; margin-bottom:8px; }
+    textarea { width:100%; min-height:145px; resize:vertical; padding:16px; border:1px solid #b9cdd4; border-radius:12px; background:#fbfdfd; color:var(--ink); font:inherit; outline:none; }
+    textarea:focus { border-color:var(--teal); box-shadow:0 0 0 3px #d8f0eb; }
+    .controls { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:16px; }
+    button { cursor:pointer; border:0; border-radius:10px; padding:11px 18px; font:700 14px system-ui,sans-serif; }
+    .primary { background:var(--teal); color:white; } .primary:hover { background:var(--teal-deep); }
+    .secondary { color:var(--teal-deep); background:var(--pale); }
+    select { border:1px solid #b9cdd4; border-radius:10px; background:white; padding:10px 12px; color:var(--ink); font:inherit; }
+    .check { display:flex; align-items:center; gap:8px; margin:0; font-size:13px; font-weight:500; color:var(--muted); }
+    .hint { font-size:13px; color:var(--muted); margin:12px 0 0; }
+    .error { margin-top:16px; padding:12px 14px; border-radius:10px; background:#fff0ed; color:#a03423; display:none; }
+    .results { display:none; margin-top:22px; }
+    .result-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .result-grid .wide { grid-column:1/-1; }
+    h2 { font-size:23px; letter-spacing:-.02em; margin:0 0 16px; }
+    h3 { color:var(--teal-deep); text-transform:uppercase; letter-spacing:.08em; font-size:12px; margin:0 0 10px; }
+    p { margin:0 0 12px; }
+    .type { display:inline-block; background:#d8f1eb; color:#065f55; border-radius:999px; padding:5px 11px; font-weight:800; text-transform:capitalize; }
+    .path { display:flex; gap:7px; flex-wrap:wrap; align-items:center; }
+    .step { background:#f0f6f7; padding:7px 10px; border-radius:8px; font-size:13px; }
+    .arrow { color:#77969b; }
+    .line { border-left:3px solid #8ac9bd; padding:8px 12px; margin:10px 0; background:#f8fcfb; border-radius:0 8px 8px 0; }
+    .speaker { font-weight:800; color:var(--teal-deep); }
+    .evidence { border-left:3px solid #edc470; padding:6px 10px; background:var(--sand); margin:6px 0; border-radius:0 8px 8px 0; }
+    .small { color:var(--muted); font-size:13px; }
+    .whatif { margin-top:16px; }
+    .compare { margin-top:16px; display:none; }
+    .compare > div { margin-top:10px; }
+    @media (max-width:700px) { .result-grid { grid-template-columns:1fr; } .panel { padding:19px; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="top"><div class="brand">XAI–ITS / SCENARIO LAB</div><div class="badge">Educational decision support</div></div>
+    <h1>Understand the situation. Explain the conversation.</h1>
+    <p class="lead">Describe a traffic situation. The system suggests a communication purpose and an illustrative exchange, then shows the input evidence and decision path.</p>
+    <section class="panel">
+      <label for="scenario">New traffic situation</label>
+      <textarea id="scenario" placeholder="A vehicle reports an obstruction ahead, but the nearby traffic signal has not yet received the report..."></textarea>
+      <div class="controls">
+        <button class="primary" id="analyze">Analyze situation</button>
+        <select id="mode" aria-label="Analysis mode"><option value="baseline">Offline baseline</option><option value="trained">Experimental trained classifier</option><option value="model">AI writing mode</option></select>
+        <label class="check"><input type="checkbox" id="proposed"> Include proposed cases 33–42</label>
+      </div>
+      <p class="hint">The trained option uses 22 draft-labeled original cases and is an experiment. Proposed additions are separate and optional. This tool does not control real traffic equipment.</p>
+      <div id="error" class="error" role="alert"></div>
+    </section>
+    <section id="results" class="results">
+      <div class="result-grid">
+        <div class="panel wide"><h3>Situation</h3><p id="summary"></p><p class="small" id="participants"></p></div>
+        <div class="panel"><h3>Dialogue purpose</h3><div id="type" class="type"></div><p class="small" id="confidence" style="margin-top:12px"></p></div>
+        <div class="panel"><h3>Decision path</h3><div id="path" class="path"></div></div>
+        <div class="panel wide"><h3>Illustrative exchange</h3><div id="dialogue"></div><p class="small" id="actual-mode"></p></div>
+        <div class="panel"><h3>Why this suggestion?</h3><p id="explanation"></p><div id="evidence"></div></div>
+        <div class="panel"><h3>Still unknown</h3><ul id="unknowns"></ul></div>
+      </div>
+      <div class="panel whatif">
+        <h2>What if a fact changes?</h2>
+        <label for="changed">Write the changed situation</label>
+        <textarea id="changed" placeholder="The traffic signal has confirmed the obstruction report. The participants need to decide how to coordinate warnings..."></textarea>
+        <div class="controls"><button class="secondary" id="compare-button">Compare decisions</button></div>
+        <div id="compare" class="compare"></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const $ = id => document.getElementById(id);
+    const set = (id, value) => { $(id).textContent = value; };
+    const clear = node => { while (node.firstChild) node.removeChild(node.firstChild); };
+    function showError(message) { $('error').textContent = message; $('error').style.display = 'block'; }
+    function hideError() { $('error').style.display = 'none'; }
+    function addText(parent, tag, content, cls) { const el = document.createElement(tag); el.textContent = content; if(cls) el.className = cls; parent.appendChild(el); return el; }
+    async function call(path, payload) {
+      const response = await fetch(path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Analysis failed');
+      return data;
+    }
+    function render(answer) {
+      set('summary', answer.summary);
+      set('participants', 'Participants: ' + (answer.participants.join(', ') || 'not specified'));
+      set('type', answer.dialogue_type);
+      set('confidence', (answer.mode.startsWith('experimental') ? 'Model status: ' : 'Rule confidence: ') + answer.confidence + (answer.dialogue_phases.length > 1 ? ' · Phases: ' + answer.dialogue_phases.join(' → ') : ''));
+      const path = $('path'); clear(path);
+      answer.decision_path.forEach((step, index) => { if(index) addText(path, 'span', '→', 'arrow'); addText(path, 'span', step, 'step'); });
+      const dialogue = $('dialogue'); clear(dialogue);
+      answer.dialogue.forEach(line => { const row = document.createElement('div'); row.className='line'; addText(row, 'span', line.speaker + ': ', 'speaker'); addText(row, 'span', line.text); dialogue.appendChild(row); });
+      set('actual-mode', 'Analysis mode: ' + answer.mode);
+      set('explanation', answer.explanation);
+      const evidence = $('evidence'); clear(evidence);
+      answer.evidence.forEach(item => addText(evidence, 'div', item, 'evidence'));
+      const unknowns = $('unknowns'); clear(unknowns);
+      answer.unknowns.forEach(item => addText(unknowns, 'li', item));
+      $('results').style.display='block';
+    }
+    function payload() { return {scenario:$('scenario').value, mode:$('mode').value, include_proposed:$('proposed').checked}; }
+    $('analyze').addEventListener('click', async () => {
+      hideError(); $('analyze').disabled=true;
+      try { render(await call('/api/analyze', payload())); $('results').scrollIntoView({behavior:'smooth'}); }
+      catch(error) { showError(error.message); }
+      finally { $('analyze').disabled=false; }
+    });
+    $('compare-button').addEventListener('click', async () => {
+      hideError(); $('compare-button').disabled=true;
+      try {
+        const data = await call('/api/compare', {...payload(), changed_scenario:$('changed').value});
+        const node = $('compare'); clear(node);
+        addText(node, 'strong', data.type_changed ? 'The dialogue type changed.' : 'The dialogue type stayed the same.');
+        addText(node, 'div', 'Before: ' + data.before.dialogue_type + ' → After: ' + data.after.dialogue_type);
+        addText(node, 'div', 'Reason in changed situation: ' + data.after.explanation);
+        node.style.display='block';
+      } catch(error) { showError(error.message); }
+      finally { $('compare-button').disabled=false; }
+    });
+  </script>
+</body>
+</html>

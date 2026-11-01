@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-36",
+  "number": 36,
+  "origin": "proposed_addition",
+  "title": "A connected truck platoon must split because its members need different highway exits.",
+  "situation": "A connected truck platoon must split because its members need different highway exits.",
+  "entities": "Platoon leader and following trucks. Platoon coordination system. Nearby vehicles occupying adjacent lanes. Roadside communication unit.",
+  "communication_type": "Inter Vehicle Communication; Vehicle-to-Roadside Infrastructure Communication.",
+  "description": "A connected truck platoon approaches a highway exit. A truck in the middle needs that exit, while the leader and other followers will continue. The platoon's normal following arrangement does not provide a confirmed gap for the truck to leave. Its membership, spacing and leadership assignments must be changed without assuming that nearby traffic will make room.",
+  "dialogue_prompts": "Is there a conflict? Yes. One member needs to leave the platoon, while the other members are following the current formation and nearby vehicles already occupy the adjacent lane. Is the reason good? Yes. Members can have different destinations, but a planned exit does not justify an unconfirmed lane change. Is settlement good? Yes, when affected members acknowledge the split and a suitable gap is confirmed. If no gap becomes available, the truck continues to an alternative exit and receives an updated route. Dialogue type Deliberation: the members agree on a sequence for separating the formation. Negotiation may be needed for a voluntary gap request to nearby traffic.",
+  "source_proposed_solutions": "The departing truck sends its exit intention and the coordination system identifies the affected members. Propose a split plan that identifies temporary leaders, spacing changes and the order of actions; collect acknowledgements. Increase the relevant following gaps within the vehicles' operating constraints and monitor adjacent traffic. Authorize the planned departure only after the required gap and member states are confirmed; cancel the maneuver if conditions change. Update platoon membership after separation. If the exit is missed, preserve stable movement and request another route.",
+  "peas": "Separation completed without conflicting maneuvers; acknowledgement completeness; stable spacing; successful membership updates. A connected truck platoon travelling near a highway exit with surrounding traffic and limited opportunities to change lanes. Vehicle acceleration and braking systems, turn indicators and platoon message transmitters. Inter-vehicle distance sensors, adjacent-lane detectors, vehicle position reports and message acknowledgement receiver.",
+  "cascading_problems": "A follower misses the split message and continues using the old leader assignment. An unrelated vehicle enters the intended gap before separation is completed. Two members request different exits at nearly the same time, requiring a revised split sequence.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario36.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 36
+  }
+}

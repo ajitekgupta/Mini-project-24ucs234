@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-30",
+  "number": 30,
+  "origin": "original_report",
+  "title": "Managing special events and parades",
+  "situation": "Managing special events and parades",
+  "entities": "1. Special Events/Parades Participants 2. Traffic lights",
+  "communication_type": "Vehicle to Infrastructure",
+  "description": "Special Events like Parades can disrupt the day-to-day traffic on the particular road and thus result in congestion which in turn result in several problems. Thus the traffic lights can play a very crucial role in such scenarios in diverting the traffic on other roads. For Example: Longer green light durations for major thoroughfares leading to the event area can help accommodate the higher volume of vehicles.",
+  "dialogue_prompts": "1. Is their a conflict? Yes, every vehicle want to cross the road as soon as possible but they are interrupted by the the congestion caused by the parade. For eg. At intersections or designated crossing points, vehicles and participants may need to share the same space. 2. Is their a common problem to be solved? Yes, both the vehicles and the participants do not want to wait for the other as they cross the road. 3. Is the reason good? No. 4. Negotiationmayberequiredtoaddressconflicts,mitigatedisruptions,andfindpracticalsolutionsthat balance the interests of all stakeholders involved.",
+  "source_proposed_solutions": "",
+  "peas": "30.6.1 Performance Measure 1. Communication Effectiveness: Evaluate the clarity and timeliness of communication with drivers, residents, businesses, and emergency services regarding traffic management plans and changes. 2. Traffic Flow: Measure the efficiency of traffic flow along parade routes and nearby roadways, aiming to minimize congestion and delays. 3. Safety: Assess the effectiveness of traffic management measures in ensuring the safety of both parade participants and road users. 30.6.2 Enviornment 4. RoadNetwork: Includesstreetsalongparaderoutes,nearbyintersections,alternativeroutes,andaccess points to businesses and residential areas. 5. Communication infrastructure for transmitting data between sensors, cameras, and law enforcement agencies. 30.6.3 Actuators 6. Traffic Lights: Control the flow of vehicular and pedestrian traffic at intersections, including adjust- ments to signal timings and sequences. 7. Variable Message Signs (VMS): Display real-time information and instructions to drivers regarding road closures, detours, and parking restrictions. 30.6.4 Sensors 8. CommunicationNetworkSensors: Monitorthereliabilityandperformanceofcommunicationnetworks used to disseminate information to drivers and coordinate traffic management efforts. 9. Traffic Cameras: Monitor traffic conditions, including congestion levels, vehicle queues, and incidents along parade routes and nearby roadways.",
+  "cascading_problems": "",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      37,
+      38
+    ]
+  }
+}

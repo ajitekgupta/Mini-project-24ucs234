@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-40",
+  "number": 40,
+  "origin": "proposed_addition",
+  "title": "Connected vehicles receive contradictory incident messages whose sources or timestamps cannot all be verified.",
+  "situation": "Connected vehicles receive contradictory incident messages whose sources or timestamps cannot all be verified.",
+  "entities": "Vehicles receiving road incident messages. Roadside communication units. Message verification service. Traffic management operator.",
+  "communication_type": "Inter Vehicle Communication; Vehicle-to-Infrastructure Communication; Inter Infrastructure Communication.",
+  "description": "Vehicles receive one message stating that a road is closed and another stating that it is open. One report may be old, relayed repeatedly or associated with an unverifiable source. The system has not established whether any sender is malicious. It must assess authenticity, freshness and independent supporting observations before presenting a route recommendation as confirmed.",
+  "dialogue_prompts": "Is there a conflict? There is a conflict between claims about the road's state. A deliberate dispute or attack has not been proven. Is there a common problem to be solved? Yes. Receivers need a supported incident state and a clear account of which messages remain uncertain. Is it theoretical? No. Vehicles may change routes immediately in response to the reports, spreading the effect of an incorrect message. Dialogue type Inquiry: the system compares claims, source verification, timestamps and corroborating observations. Repetition alone is not treated as proof.",
+  "source_proposed_solutions": "Collect the messages with their identifiers, source information, timestamps and claimed road state. Check message integrity and source verification using the configured trust mechanism; flag failed checks without inventing a cause. Check freshness and detect repeated or relayed copies so one original claim is not counted as several independent reports. Seek a current infrastructure observation or operator confirmation when the claims still disagree. Display confirmed information separately from unresolved claims. Issue a revised advisory when the evidence changes and retain the decision basis for review.",
+  "peas": "Incorrect reports prevented from becoming confirmed advisories; time to resolve contradictory claims; duplicate reports recognized; evidence traceability. A connected road network where vehicles and roadside units exchange incident messages with different ages and verification states. Incident advisory display, verified-message broadcaster, operator alert service and guidance update interface. Message receiver, infrastructure observation feed, timestamp reference and source-verification inputs.",
+  "cascading_problems": "A valid message arrives late and is stale even though its source is authentic. Several vehicles relay the same original report, creating a false appearance of independent agreement. The authoritative source is unavailable and the system must preserve an unresolved status.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario40.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 40
+  }
+}

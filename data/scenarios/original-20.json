@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-20",
+  "number": 20,
+  "origin": "original_report",
+  "title": "Vehicle has moved into wrong road stretch",
+  "situation": "Vehicle has moved into wrong road stretch",
+  "entities": "1. Vehicles 2. Traffic Signal",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication",
+  "description": "A vehicle has entered into wrong road stretch either by mistake or due to some other factors like misinter- pretation of navigation path, thus it must be re-routed.",
+  "dialogue_prompts": "1. Is there a conflict? No, because mistake is accepted by the vehicle eventually and solution is sought at the earliest in such situations. 2. Is there a common problem to be solved? Yes, because the vehicle does/attempts to disturb the traffic flow in its own convenience 3. Is it theoretical? No, the vehicle has to find an exit towards the correct route as soon as possible. (Deliberation)",
+  "source_proposed_solutions": "1. Vehicles re-routes itself towards the destination. 2. if new path is unfeasible due to traffic or much longer distance, a U-turn should be arranged by traffic signal. 3. alternatively to reduce additional components in vehicles, we can implement such an arrangement by detection system on traffic signal itself.",
+  "peas": "1. Performance measure - Vehicles gets a new route with lowest added distance over its normal path 2. Environment - A vehicle moving on the road has opted for a wrong turn into a congested stretch 3. Actuator - Mapping system of the vehicles, transmitter on vehicle to communicate with traffic signal, Traffic Signal re-routing mechanism 4. Sensor - Reception Sensor on both traffic signal and vehicle",
+  "cascading_problems": "1. Vehicle 1 may not always agree to move to next stop. 2. Vehicle 1 may have certain special priviledge to park at the spot.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      25
+    ]
+  }
+}

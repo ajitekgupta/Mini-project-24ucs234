@@ -1,0 +1,134 @@
+{
+  "scope": "baseline rule classifier; author-reviewed prompts, not faculty labels",
+  "count": 12,
+  "label_agreement": "12/12",
+  "evidence_span_checks": "12/12",
+  "private_reference_checks": "12/12",
+  "cases": [
+    {
+      "name": "unreceived report",
+      "expected": [
+        "information seeking"
+      ],
+      "predicted": "information seeking",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "confirmed report and shared choice",
+      "expected": [
+        "deliberation"
+      ],
+      "predicted": "deliberation",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "parking allocation",
+      "expected": [
+        "negotiation"
+      ],
+      "predicted": "negotiation",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "disputed claim",
+      "expected": [
+        "persuasion"
+      ],
+      "predicted": "persuasion",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "contradictory observations",
+      "expected": [
+        "inquiry"
+      ],
+      "predicted": "inquiry",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "antagonistic exchange",
+      "expected": [
+        "eristics"
+      ],
+      "predicted": "eristics",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "two-stage exchange",
+      "expected": [
+        "mixed"
+      ],
+      "predicted": "mixed",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "underspecified",
+      "expected": [
+        "unclear"
+      ],
+      "predicted": "unclear",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "rail crossing coordination",
+      "expected": [
+        "deliberation"
+      ],
+      "predicted": "deliberation",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "pedestrian status request",
+      "expected": [
+        "information seeking"
+      ],
+      "predicted": "information seeking",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "new resource conflict",
+      "expected": [
+        "negotiation"
+      ],
+      "predicted": "negotiation",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    },
+    {
+      "name": "unverified road state",
+      "expected": [
+        "inquiry"
+      ],
+      "predicted": "inquiry",
+      "label_ok": true,
+      "evidence_exact_from_input": true,
+      "private_reference_free": true
+    }
+  ],
+  "limitations": [
+    "These prompts are small and author-created; accuracy is not a real-world safety claim.",
+    "Exact evidence checks do not establish that all generated statements are factually correct.",
+    "Human review is still needed for dialogue quality and explanations."
+  ]
+}

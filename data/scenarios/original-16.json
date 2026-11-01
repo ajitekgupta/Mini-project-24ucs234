@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-16",
+  "number": 16,
+  "origin": "original_report",
+  "title": "Vehicle has a reason to reverse short distance while there is a vehicle at the back.",
+  "situation": "Vehicle has a reason to reverse short distance while there is a vehicle at the back.",
+  "entities": "1. Vehicles",
+  "communication_type": "Inter Vehicles Communication",
+  "description": "A vehicle may have found some street vendor to stop by, or missed the location it wanted to stop by. Most vehicleswouldn’twanttogooverroadandtakeaU-turnfromwhereverpossiblewhichmightbetoodistant to be considered always.",
+  "dialogue_prompts": "Is there a conflict? Yes, because vehicle at the back is in motion and the one in front wants to reverse all of a sudden. Is reason good? No, Vehicle in the front wants to reverse which creates disturbance in the traffic flow and is only in personal interest of the vehicle in the front. Is settlement good? Case - Yes Vehicle at the back changes the lane allowing the one in front to reverse Case - No Vehicleatthebackdoesn’tallowthevehicleinthefronttoreversecausingcongestionduetodeadlockamong vehicles until one gives up.",
+  "source_proposed_solutions": "1. Vehicle requests vehicle behind itself to slow down while approaching or change lane. 2. Vehicle at the back refuses to do so, due to its own reasons, thus requesting vehicle must wait. 3. Requesting vehicles attempts to reverse disregarding other vehicle. 4. Vehicle which is been requested to, actually allows the other vehicle to reverse.",
+  "peas": "1. Performance Measure - Vehicle in the back can change lanes if possible otherwise vehicle in the front needs to wait the least time by negotiating with vehicles at further back. 2. Environment - A congested road stretch where a vehicle is trying to reverse a small distance but it is been followed by another vehicle. 3. Actuator - Braking Mechanism in the vehicles, Lane change mechanism in other vehicles, Request transmitter in the vehicle. 4. Sensor - Proximity sensor in the vehicles, Requesting reception sensor in the vehicles.",
+  "cascading_problems": "1. A queue of vehicle maybe formed due to letting go of notification of such maneuvers.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      20,
+      21
+    ]
+  }
+}

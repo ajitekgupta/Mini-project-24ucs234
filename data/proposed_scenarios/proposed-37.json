@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-37",
+  "number": 37,
+  "origin": "proposed_addition",
+  "title": "A toll lane cannot confirm whether a payment succeeded after a communication timeout.",
+  "situation": "A toll lane cannot confirm whether a payment succeeded after a communication timeout.",
+  "entities": "Vehicle at the toll lane. Toll lane controller and payment tag reader. Payment processing service. Toll operator and vehicles waiting behind.",
+  "communication_type": "Vehicle-to-Toll Infrastructure Communication; Toll Infrastructure-to-Payment Service Communication.",
+  "description": "A vehicle's toll payment request is sent, but the network connection times out before the lane receives the result. The vehicle may already have been charged, while the lane still displays an unpaid status. Retrying as a new transaction could create a duplicate charge. The controller must establish the original transaction's state and manage the waiting vehicle under the operator's exception policy.",
+  "dialogue_prompts": "Is there a conflict? There is a disagreement about payment status: the vehicle reports a charge while the lane has no confirmed result. Intentional non-payment has not been established. Is there a common problem to be solved? Yes. Both parties need the original transaction's status so that passage can be handled without an unsupported second charge. Is it theoretical? No. A vehicle is waiting at the lane and the status must be resolved or handled through the configured exception procedure. Dialogue type Inquiry: the participants examine transaction evidence to establish what happened. Information seeking is used to request the result for the original transaction identifier.",
+  "source_proposed_solutions": "Keep the original transaction identifier and record the timeout as pending rather than automatically failed. Query the payment service using that identifier; do not create a new payment request merely because the response was lost. If success is confirmed, mark the transaction paid and allow passage according to the lane's vehicle-presence interlock. If failure is confirmed, explain it and offer the permitted payment alternatives. If the status remains unknown, invoke the operator's exception procedure. Where an exception bay is available, direct the vehicle there only when the movement is clear; reconcile the pending transaction later.",
+  "peas": "Duplicate charges avoided; correct payment-status reconciliation; time spent blocking the lane; proportion of unresolved transactions. A toll plaza with connected payment processing, a controlled entry barrier, waiting vehicles and an optional exception bay. Toll barrier, lane status display, exception-bay guidance indicator and operator alert service. Payment tag reader, vehicle-presence detector, barrier position sensor and payment-status response receiver.",
+  "cascading_problems": "A delayed success response arrives after the vehicle has been moved to an exception bay. A second read of the same tag is mistakenly treated as a new vehicle visit. A network outage affects several lanes and requires coordinated exception handling.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario37.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 37
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "internal_id": "original-32",
+  "number": 32,
+  "origin": "original_report",
+  "title": "Automated Traffic Violation Enforcement System with Direct Fine Deduction.",
+  "situation": "Automated Traffic Violation Enforcement System with Direct Fine Deduction.",
+  "entities": "1. Vehicles: The vehicles moving through the monitored intersections. 2. Traffic Management Infrastructure: This includes cameras, sensors, and the central control unit re- sponsible for monitoring and processing traffic violations. 3. Traffic Management Authorities 4. Banking System: The system responsible for handling financial transactions and deducting fines from the bank accounts of violators.",
+  "communication_type": "Vehicle to Infrastructure, Infrastructure to Infrastructure",
+  "description": "The intelligent traffic management system is designed to automatically detect vehicles that break traffic signals and deduct fines directly from their bank accounts. This system utilizes a network of cameras and sensors installed at key intersections to monitor traffic flow and identify violations in real-time. When a vehicle is detected running a red light or violating any other traffic signal, the system captures relevant information such as the vehicle’s license plate number, timestamp, and the nature of the violation. This information is then processed by a central control unit which interfaces with the banking system to initiate the fine deduction process.",
+  "dialogue_prompts": "1. Is their a conflict? No 2. Is their a common problem to be solved? Yes, the final goal of all the entities is to clear the traffic. 3. Is it theoretical? No. 4. Deliberation would involve discussions focused on the design, implementation, and optimization of the automated traffic violation enforcement system",
+  "source_proposed_solutions": "",
+  "peas": "32.7.1 Performance Measure 1. Accuracyofviolationdetection, efficiencyoffinedeductionprocess, reductionintrafficviolations, and overall system reliability. 32.7.2 Enviornment 2. Urban traffic intersections where the system is deployed. 32.7.3 Actuators 3. Cameras for capturing violations, banking system interface for deducting fines. 32.7.4 Sensors 4. Traffic cameras, sensors for detecting vehicle presence and violation of traffic signals.",
+  "cascading_problems": "",
+  "other_sections": {
+    "implemention": "1. Cameras and Sensors: Installed at traffic intersections to monitor vehicles and detect violations. 2. Central Control Unit: Receives data from cameras and sensors, processes violation information, and interfaces with the banking system. 3. Banking System Interface: Establishes a secure connection with the banking system to deduct fines from the bank accounts of violators."
+  },
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      41,
+      42
+    ]
+  }
+}

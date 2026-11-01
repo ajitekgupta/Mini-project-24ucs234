@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-41",
+  "number": 41,
+  "origin": "proposed_addition",
+  "title": "A bus receives a departure request while its door system cannot confirm that the doorway is clear.",
+  "situation": "A bus receives a departure request while its door system cannot confirm that the doorway is clear.",
+  "entities": "Bus and driver. Boarding or alighting passengers. Door controller and passenger detection system. Bus departure interlock.",
+  "communication_type": "Passenger-to-Vehicle Communication; Inter-System Communication within the Bus; Driver-to-Vehicle Communication.",
+  "description": "A bus is ready to leave a stop, but a doorway detector reports a passenger or object in the closing area. The door position sensor gives an inconsistent closed indication. The driver requests departure to keep the service on schedule. The bus must reconcile the doorway evidence and keep movement permission dependent on a verified door state.",
+  "dialogue_prompts": "Is there a conflict? Yes. The departure request conflicts with unresolved evidence that the doorway may still be occupied. Is the reason good? Keeping the timetable is a valid service goal, but it does not establish that the door is secure or the doorway clear. Is settlement good? Yes, if departure is delayed until the obstruction is resolved and closure is verified. A continuing sensor disagreement requires inspection under the operator's procedure. Dialogue type Information seeking establishes the door and passenger state, followed by deliberation about clearing the doorway or requesting assistance.",
+  "source_proposed_solutions": "Keep departure permission disabled when the door state or doorway clearance is unresolved. Notify the driver and passengers of the reported obstruction or sensor disagreement without claiming a passenger is at fault. Use the door's defined obstruction-response procedure and request the doorway to be cleared. Recheck obstruction detection and secure-closure indication before enabling departure; reset permission if either condition changes. If evidence remains inconsistent, request inspection or assistance and communicate the resulting service delay.",
+  "peas": "No departure with an unverified door state; obstruction detection and resolution time; false clearance decisions; passenger communication clarity. A bus stopped for passenger exchange with a powered door, a departure interlock and possibly conflicting sensor reports. Door drive, departure interlock, driver warning display and passenger announcement system. Doorway obstruction detector, door-latch sensor, door position sensor and driver departure-request input.",
+  "cascading_problems": "A strap or small object remains trapped despite the passenger having moved away. A faulty latch sensor repeatedly prevents a verified departure and requires maintenance. A following bus is delayed by the occupied stop and needs separate service coordination.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario41.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 41
+  }
+}

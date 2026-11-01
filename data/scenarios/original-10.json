@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-10",
+  "number": 10,
+  "origin": "original_report",
+  "title": "Vehicle enters the road stretch for a parking space but there is none.",
+  "situation": "Vehicle enters the road stretch for a parking space but there is none.",
+  "entities": "1. Vehicle 2. Traffic Signal",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication and Inter Traffic Signals Communication",
+  "description": "Vehicleisattemptingtoenteraroadstretchespeciallyforparkingbuttrafficsignalknowsthatallarefilled.",
+  "dialogue_prompts": "1. Is there a conflict ? No, non-availability of parking space can happen at any time/ 2. Is there a common problem to be solved? No, only the concerned vehicle is now trying to look for a new location to park nearby.",
+  "source_proposed_solutions": "1. Vehicle tells traffic signal that it wants to stop at the nearest point. 2. Ifthereisafreeparkingspaceintheroadstretchahead,trafficsignalallowsittomoveinthedirection of the same . 3. If there is no free parking space, traffic signal communicates with other traffic signal to find nearest parking space . 4. On successful search of nearest parking space, traffic signal redirects the vehicle in that route .",
+  "peas": "1. PerformanceMeasure-Vehiclesearchingfortheparkingspaceisredirectedtothenearestonebytraffic signal. 2. Environment - A vehicle is in search of a parking space but has found none thus needs to be allotted one nearest. 3. Actuator - Transmitter in vehicle, Transmitter in traffic signal 4. Sensor - Receviers in Vehicle and traffic signals, Parking Space detection sensor",
+  "cascading_problems": "1.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      12
+    ]
+  }
+}

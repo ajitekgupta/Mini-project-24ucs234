@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-06",
+  "number": 6,
+  "origin": "original_report",
+  "title": "Vehicle has parked or stopped by roadside yet the traffic signal does not know.",
+  "situation": "Vehicle has parked or stopped by roadside yet the traffic signal does not know.",
+  "entities": "1. Traffic signal 2. Vehicle which has stopped/parked.",
+  "communication_type": "Inter Vehicle & Traffic Signal",
+  "description": "A vehicle looking for parking spot has successfully landed one thus stopped but still being counted as traffic flow.",
+  "dialogue_prompts": "1. Is there a conflict? No, We only have to update traffic signal with current status of parking spaces. 2. Is there a common problem to be solved? No, only traffic signal is concerned with updating its information",
+  "source_proposed_solutions": "1. Vehicle informs the traffic at both ends of the road stretch that it has parked thus must be counted out of traffic flow.",
+  "peas": "1. Performance Measure - If a vehicle has entered a parking space, traffic signal must be immediately updated with information so new vehicles desiring to park can be redirected as needed. 2. Environment - A vehicle has parked in a parking space successfully. 3. Actuator - Deceleration Mechanism in the vehicle, Parking Detection sensor transmitter 4. Sensor - Parking detection sensor, Traffic signal’s receiver",
+  "cascading_problems": "1. Vehicle in parked state is willing to commence motion but does not inform the traffic signal thus disrupting real traffic flow (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      8
+    ]
+  }
+}

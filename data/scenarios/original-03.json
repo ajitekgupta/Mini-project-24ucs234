@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-03",
+  "number": 3,
+  "origin": "original_report",
+  "title": "Pothole or some static obstruction is present in a road stretch blocking entire road.",
+  "situation": "Pothole or some static obstruction is present in a road stretch blocking entire road.",
+  "entities": "1. Vehicles attempting to enter the road stretch. 2. Traffic signal at end of road from which vehicles enter it into targeted side. 3. Other traffic signals at the intersection.",
+  "communication_type": "Inter Vehicle and Traffic Signal Communication and Inter Vehicle Communication",
+  "description": "Vehicles moving have observed an obstruction on the road blocking it.",
+  "dialogue_prompts": "1. Is there a conflict? No, the issue caused by uncontrolled entity/force. 2. Is there a common problem to be solved? Yes,ifaroadisblocked,novehiclesshallenteritastheywouldaddtounnecessaryactionsiftheydid. 3. Is it theoretical? No, road blocking information must be passed immediately so vehicles can adjust their routes accord- ingly.",
+  "source_proposed_solutions": "1. Traffic signal has observed a static obstruction due to which the entire road is blocked, this message is conveyed to the other traffic signal nearby. 2. Traffic signal notifies vehicle with intention to move into it immediately, and informs other traffic signals to take up updated time period to allow their vehicles.",
+  "peas": "1. Performance Measure - Road must be blocked and information must be passed upon detection of an obstruction 2. Environment - An obstruction is present on the road stretch. 3. Actuator - Transmitters in traffic signal, re-routing mechanism in traffic signal 4. Sensor - Obstruction detection sensor in traffic signal/roadside, Receiver in vehicles",
+  "cascading_problems": "1. Resolution of the problem is not informed as no vehicle is allowed to enter (Discussed).",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      5
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "internal_id": "original-29",
+  "number": 29,
+  "origin": "original_report",
+  "title": "Vehicle Breakdowns and Roadside Assistance.",
+  "situation": "Vehicle Breakdowns and Roadside Assistance.",
+  "entities": "1. Vehicle (One which is damaged) 2. Towing Companies 3. Traffic Management Authorities 4. Sensors of the infrastructure",
+  "communication_type": "Vehicle to Infrastructure, Infrastructure to Infrastructure",
+  "description": "The traffic management authorities must be informed about the incident as quick as possible and it must contact the towing company to ensure the clearance of the road and providing assistance to the motorists.",
+  "dialogue_prompts": "1. Is their a conflict? No, The goal of all the entities involved is to minimize the disruption in the traffic. So their is no conflict. 2. Is their a common problem to be solved? Yes, the final goal of all the entities is to clear the traffic. 3. Is it theoretical? No. 4. Deliberation Their is need for the concerned authorities to take adequate actions as soon as they are informed.",
+  "source_proposed_solutions": "1. Traffic lights can help prevent such situations by directing incoming vehicles to other routes and also facilitate coordination between roadside assistance services and towing companies by providing clearances or temporary signal adjustments to enable safe access to the disabled vehicle for towing or repair.",
+  "peas": "29.8.1 Performance Measure 1. Efficiency of traffic flow: Minimize congestion and delays caused by the breakdown. 2. Effectivenessofcommunication: Ensuretimelynotificationofauthoritiesandcoordinationofresponse. 3. Safety: Minimize the risk of accidents and ensure the safety of drivers and pedestrians. 29.8.2 Enviornment 4. Road network with traffic lights, sensors and vehicles. 29.8.3 Actuators 5. Traffic lights: Actuate to reroute traffic away from the breakdown site. 6. Variable message signs (VMS): Display information to drivers about alternate routes or the presence of a breakdown. 7. Roadside assistance vehicles: Dispatch to the breakdown location to provide assistance. 29.8.4 Sensors 8. Traffic light sensors: Detect the presence of a vehicle stopped at the intersection due to a breakdown. 9. Vehicle sensors: Provide data on the vehicle’s condition (e.g., engine failure, tire blowout) to trigger the response system. 10. Communication network sensors: Monitor network status and ensure reliable transmission of data between components.",
+  "cascading_problems": "1. Secondary Collisions: Congestion resulting from a breakdown increases the risk of secondary collisions asothermotoristsnavigatearoundthedisabledvehicle. Suddenstopsorlanechangescancatchdrivers off guard, potentially leading to rear-end collisions or sideswipes.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      34,
+      35,
+      36
+    ]
+  }
+}

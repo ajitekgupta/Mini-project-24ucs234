@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-42",
+  "number": 42,
+  "origin": "proposed_addition",
+  "title": "Tunnel air-quality measurements exceed a configured threshold while ventilation capacity is reduced.",
+  "situation": "Tunnel air-quality measurements exceed a configured threshold while ventilation capacity is reduced.",
+  "entities": "Vehicles inside and approaching the tunnel. Tunnel operations controller. Air-quality monitoring stations and ventilation equipment. Tunnel operator and entrance control units.",
+  "communication_type": "Tunnel Infrastructure-to-Vehicle Communication; Inter Infrastructure Communication; Infrastructure-to-Operator Communication.",
+  "description": "Tunnel monitoring stations report air-quality measurements above an operator-configured action threshold. A ventilation status report also indicates that part of the ventilation system is unavailable. The tunnel remains physically unobstructed. The operations controller must check the measurements and coordinate ventilation, admission control and operator response under the tunnel's defined incident procedure.",
+  "dialogue_prompts": "Is there a conflict? No intentional conflict is established. Vehicles and the operator share a problem involving the tunnel's environmental condition. Is there a common problem to be solved? Yes. The controller must respond to the reported condition while considering vehicles already inside and those approaching the entrances. Is it theoretical? No. Current measurements and reduced ventilation capacity require an operational response, even before the cause is fully known. Dialogue type Deliberation: the systems and operator choose a coordinated response. Inquiry is used to assess sensor agreement and equipment status.",
+  "source_proposed_solutions": "Compare current readings from the monitoring stations and check timestamps and sensor health; preserve disagreement as uncertainty. Confirm available ventilation capacity and execute the configured response for the reported threshold condition. Apply the incident procedure's admission restrictions and notify approaching vehicles of the tunnel's current status. Provide vehicles already inside with the operator-approved instructions for the verified incident state; escalate when measurements or equipment status require it. Restore normal admission only after the procedure's recovery conditions are met and the operator or authorized controller records clearance.",
+  "peas": "Time from a verified threshold condition to the configured response; reduction in threshold exceedance duration; consistent entrance status; premature reopening avoided. An occupied road tunnel with air-quality stations, controllable entrances and partially unavailable ventilation equipment. Ventilation fans and dampers, entrance control signals, variable message signs and operator alert transmitter. Air-quality sensors, airflow sensors, ventilation health monitors and tunnel occupancy detectors.",
+  "cascading_problems": "A sensor drifts and reports high values inconsistent with other stations. Ventilation status messages stop arriving during the response, making available capacity uncertain. Measurements briefly improve and then worsen, so reopening requires the specified recovery conditions rather than one favorable reading.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario42.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 42
+  }
+}

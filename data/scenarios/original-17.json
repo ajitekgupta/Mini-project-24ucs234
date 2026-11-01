@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-17",
+  "number": 17,
+  "origin": "original_report",
+  "title": "Vehicle wants to enter road from a parking space",
+  "situation": "Vehicle wants to enter road from a parking space",
+  "entities": "1. Vehicles",
+  "communication_type": "Inter Vehicles Communication",
+  "description": "A vehicle may attempt to get into the road from a parking space or crossover to different side of road by taking a U-turn but due to excess traffic it is not happening.",
+  "dialogue_prompts": "Is there a conflict? Yes, because vehicles in motion don’t want to decelerate or stop just to give way to other vehicles whereas one in parking wants to enter the traffic. Is Reason Good? Yes, because vehicle desiring to move into the traffic must be allowed to enter.",
+  "source_proposed_solutions": "1. Vehicle requests neighboring vehicles to allow it to join the road. 2. Other vehicles slow down/stop and allow the vehicle to join the road. 3. Other vehicles reject the request partially i.e. lets the requesting vehicle to move a little into the road. (negotiation). 4. Requesting vehicle is waiting for long therefore adds to priority level (if implementation with traffic signal is possible).",
+  "peas": "1. PerformanceMeasure-Vehiclecomingoutoftheparkingspacejoinsthetrafficflowassoonaspossible simultaneously causing least disturbance to the current traffic flow. 2. Environment - A vehicle exiting a parking space and trying to join the traffic flow. Traffic Light may or may not be present nearby. 3. Actuator - Indicator/Transmitter and Braking mechanism in the vehicles 4. Sensor - Reception Sensor in the vehicles.",
+  "cascading_problems": "1. A queue of vehicle maybe formed due to letting go of notification of such maneuvers.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      22
+    ]
+  }
+}

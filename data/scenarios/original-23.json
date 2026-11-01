@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-23",
+  "number": 23,
+  "origin": "original_report",
+  "title": "Traffic Signal Power Outage",
+  "situation": "Traffic Signal Power Outage",
+  "entities": "1. Vehicles approaching an intersection controlled by traffic signals. 2. Traffic signal system.",
+  "communication_type": "Vehicle-to-Vehicle Communication, Vehicle-to-Traffic Signal Communication",
+  "description": "Vehiclesareapproachinganintersectioncontrolledbytrafficsignals,butthetrafficsignalsystemexperiences a power outage, rendering the signals non-functional.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, there is potential for conflict as vehicles approach the intersection without functioning signals, leading to uncertainty about right-of-way. Is reason good? Yes, the reason for conflict is the absence of functioning traffic signals. Persuasion: Vehiclescommunicatewitheachothertoprioritizesafetyandcooperationinnavigatingtheintersection without signals.",
+  "source_proposed_solutions": "1. Vehicles approaching the intersection detect the power outage and inform nearby vehicles of the situ- ation. 2. Vehicles negotiate with each other to determine right-of-way at the intersection in the absence of functioning signals. 3. Vehicles coordinate to proceed cautiously through the intersection, taking turns to ensure safety and minimize the risk of collisions. 4. If necessary, vehicles communicate with each other to establish temporary rules of the road, such as treating the intersection as an all-way stop. 1. Vehicles employ sensors to detect the power outage and broadcast this information to nearby vehicles. 2. Vehiclesuseinter-vehiclecommunicationtonegotiateright-of-wayorestablishtemporaryrulesforsafe passage. 3. Vehicles utilize adaptive driving systems to coordinate movements and ensure safe navigation through the intersection.",
+  "peas": "1. Performance Measure - Vehicles safely navigate through the intersection, minimizing the risk of colli- sions and traffic congestion. 2. Environment - An intersection controlled by traffic signals experiences a power outage, leading to uncertainty among approaching vehicles. 3. Actuator - Transmitters in vehicles, adaptive driving systems. 4. Sensor - Receivers in vehicles, detection of power outage, proximity sensors.",
+  "cascading_problems": "1. Confusion and uncertainty among drivers approaching the intersection. 2. Potential for traffic congestion and delays as vehicles navigate through the intersection without signal guidance.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      28,
+      29
+    ]
+  }
+}

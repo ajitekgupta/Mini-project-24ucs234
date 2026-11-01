@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-34",
+  "number": 34,
+  "origin": "proposed_addition",
+  "title": "Heavy vehicles request bridge entry when their combined load would exceed the permitted operating limit.",
+  "situation": "Heavy vehicles request bridge entry when their combined load would exceed the permitted operating limit.",
+  "entities": "Heavy vehicles approaching the bridge. Bridge admission controller. Weight measurement stations and bridge occupancy detectors. Bridge operator.",
+  "communication_type": "Vehicle-to-Bridge Infrastructure Communication; Inter Infrastructure Communication.",
+  "description": "Two heavy vehicles arrive at separate bridge entrances. Each vehicle is eligible to use the bridge individually, but their combined load, together with vehicles already on the span, exceeds the operator-configured admission limit. Neither approach has a complete view of the other approach. A shared controller must decide the admission order from verified measurements and current occupancy.",
+  "dialogue_prompts": "Is there a conflict? Yes. Both vehicles request immediate entry, but the bridge cannot admit them together under the configured load limit. Is the reason good? Both requests are valid, but immediate access depends on available load capacity and verified vehicle measurements. Is settlement good? Yes, if the vehicles accept sequential admission using the stated queue policy. A disputed weight measurement requires rechecking before a permit is issued. Dialogue type Negotiation over admission order, constrained by a fixed operating limit. Information seeking establishes vehicle weights and whether earlier vehicles have exited.",
+  "source_proposed_solutions": "Read each vehicle's measured weight and check that the measurement is associated with the correct vehicle. Maintain a shared record of vehicles admitted to the span and subtract their load only after their exits are confirmed. Calculate whether the requested entry fits the configured operating limit; reserve capacity before issuing a single-use admission permit. Admit eligible vehicles according to the published queue policy and explain any delay using current occupancy and remaining capacity. If weight or occupancy evidence is uncertain, hold new admissions and ask the operator to resolve the discrepancy.",
+  "peas": "Admissions remain within the configured load limit; waiting time among eligible vehicles; accuracy of entry and exit accounting. A load-controlled bridge with two approach queues, measurement stations and an operator-configured admission policy. Entry gates, permission displays, queue guidance signs and operator alert transmitter. Vehicle weight sensors, vehicle identity readers, span occupancy detectors and exit detectors.",
+  "cascading_problems": "An exit is missed, leaving capacity incorrectly reserved and delaying later vehicles. A vehicle enters without using its assigned permit, requiring occupancy reconciliation. A vehicle cannot use an alternative route because that route has a different weight restriction.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario34.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 34
+  }
+}

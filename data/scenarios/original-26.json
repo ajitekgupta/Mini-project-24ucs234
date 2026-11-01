@@ -1,0 +1,29 @@
+{
+  "internal_id": "original-26",
+  "number": 26,
+  "origin": "original_report",
+  "title": "Traffic Signals Not Considering School Zones or Playgrounds",
+  "situation": "Traffic Signals Not Considering School Zones or Playgrounds",
+  "entities": "1. Traffic signal systems. 2. School zones or playgrounds. 3. Motorists.",
+  "communication_type": "Traffic Signal-to-Motorist and Traffic Signal-to-Pedestrian.",
+  "description": "Traffic signals may overlook school zones or playgrounds during peak activity times, posing safety risks to children and pedestrians.",
+  "dialogue_prompts": "1. Is there a Conflict? Yes. Failure to consider school zones or playgrounds risks pedestrian safety. Is Reason good? Yes. Safety of children is paramount. Persuasion: Traffic signals must prioritize pedestrian safety near school zones and playgrounds.",
+  "source_proposed_solutions": "1. Install flashing beacons or signs to alert motorists to school zones or playgrounds. 2. Implement school zone-specific signal timings to prioritize pedestrian safety during peak hours. 3. Enhance crosswalk markings and signage near school zones to improve pedestrian visibility and safety.",
+  "peas": "1. Performance Measure - Enhanced pedestrian safety near school zones and playgrounds. 2. Environment - School zones, playgrounds, intersections near educational facilities. 3. Actuator - Flashing beacons, signal timing adjustments, crosswalk enhancements. 4. Sensor - Pedestrian detection systems, traffic monitoring.",
+  "cascading_problems": "1. Increased risk of accidents involving children and pedestrians. 2. Community concerns about child safety. 3. Negative impact on community well-being due to safety risks and traffic-related stress.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      31,
+      32
+    ]
+  }
+}

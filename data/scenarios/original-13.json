@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-13",
+  "number": 13,
+  "origin": "original_report",
+  "title": "Traffic inflow of a road stretch is higher than outflow.",
+  "situation": "Traffic inflow of a road stretch is higher than outflow.",
+  "entities": "1. Traffic Signals",
+  "communication_type": "Inter Traffic Signals Communication",
+  "description": "A prominent route such that leading to workplace area, or a entertainment place during their peak hours has very high number of vehicles coming in from each direction requiring higher time to exit the stretch.",
+  "dialogue_prompts": "1. Is there a conflict? Yes, influx of traffic flow is very high into a road stretch while the outflow is limited by other traffic signals. 2. Is settlement good? Yes, Traffic signal requests other traffic signals to reduce influx and increase outflow of the traffic from particular stretch and request is adjusted in traffic.",
+  "source_proposed_solutions": "1. Traffic signal at the entry of the road stretch informs the one at the other end to get request higher green time to exit the road stretch so traffic flow can be maintained. 2. Traffic signal at the exit requests all other traffic signals to allow higher green time to it. 3. Traffic signal at the entry requests traffic signals in direction of incoming traffic to reduce traffic flow into the direction.",
+  "peas": "1. Performance Measure - influx of a road stretch is always maintained to be lower the outflow of the road stretch/ 2. Environment - Road Stretch between two intersections have high inflow of vehicles of one end but low outflow from other end. 3. Actuator - Transmitter in traffic signal 4. Sensor - Receiver in traffic signals, traffic flow detection system in the traffic signals.",
+  "cascading_problems": "1. Does not consider if multiple routes have similar problem leading to a deadlock of requests.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      16
+    ]
+  }
+}

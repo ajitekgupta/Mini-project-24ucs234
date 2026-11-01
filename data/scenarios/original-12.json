@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-12",
+  "number": 12,
+  "origin": "original_report",
+  "title": "There is a deadlock at roundabout.",
+  "situation": "There is a deadlock at roundabout.",
+  "entities": "1. Vehicles 2. Traffic Signals",
+  "communication_type": "Inter Vehicle & Traffic Signal Communication and Inter Traffic Signals Communication",
+  "description": "Vehicles at a roundabout have entered into a deadlock, resolution by taking a step back for every car and some cars entering into other routes, even if they are longer.",
+  "dialogue_prompts": "1. Is there a conflict? No,theproblemiscausedbycollectivemistakesofeveryvehiclesthusinterpersonalconflictisirrelevant to problem resolution. 2. Is there a common problem to be solved? Yes, every vehicle must make collective efforts to resume normal traffic flow. 3. Is it theoretical? No, the issue needs every vehicle to follow an approach to resolve issue.",
+  "source_proposed_solutions": "1. Traffic signals at the roundabout informs all the neighbouring traffic signals to significantly reduce traffic flow into the direction of roundabout. 2. Traffic signals emit special message to each vehicle at the roundabout to take a step back and move into other routes if space is available, and other vehicles in the road stretches to move back to create space.",
+  "peas": "1. Performance Measure - Deadlock should be resolved at the roundabouts at the earliest time. 2. Environment-Aroundaboutwherevehicleshaveenteredfromdifferentdirectionsduetowhosemove- ment a deadlock has formed. 3. Actuators - Transmitter at traffic signal, Acceleration/Deceleration mechanism in the vehicles 4. Sensors - Receiver in vehicles, Deadlock detection system at roundabouts.",
+  "cascading_problems": "1. Vehicles have to enter wrong/longer routes.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      15
+    ]
+  }
+}

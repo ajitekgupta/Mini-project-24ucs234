@@ -1,0 +1,25 @@
+{
+  "internal_id": "proposed-33",
+  "number": 33,
+  "origin": "proposed_addition",
+  "title": "Reversible lane direction is scheduled to change while vehicles remain inside.",
+  "situation": "Reversible lane direction is scheduled to change while vehicles remain inside.",
+  "entities": "Vehicles travelling through the reversible lane. Lane control system at both entrances. Roadside occupancy detectors and entry barriers. Traffic management operator.",
+  "communication_type": "Inter Vehicle and Infrastructure Communication; Inter Infrastructure Communication.",
+  "description": "A reversible lane is scheduled to change its permitted direction. Entry from the current direction has been closed, but an exit detector still reports a vehicle inside the controlled segment. The controller at the opposite entrance requests permission to open. The two entrances must agree on one lane state and establish that the segment is empty before the direction changes.",
+  "dialogue_prompts": "Is there a conflict? Yes. The opposite entrance requests access while a vehicle still occupies the lane in its current direction. Is the reason good? The request follows the operating schedule, but the schedule alone does not justify admitting opposing traffic. Is settlement good? Yes, if both entrances remain closed to new entries until clearance is verified. If clearance is uncertain, the change is postponed and an operator is informed. Dialogue type Deliberation: the controllers must agree on a coordinated sequence using occupancy evidence. Information seeking is needed when detectors disagree.",
+  "source_proposed_solutions": "Close admission at both entrances and record acknowledgements from both controllers. Allow vehicles already inside to leave in their existing direction; monitor the segment and its exits. Compare occupancy readings with exit counts. Treat a missing report or disagreement as an unresolved clearance condition. Once clearance is verified, update direction indicators and interlocks together. Open only the entrance corresponding to the new direction after the other entrance confirms closure. If a vehicle remains inside or either controller fails to acknowledge, keep the change pending and request operator review.",
+  "peas": "No simultaneous admission of opposing traffic; time between confirmed clearance and reopening; number of unresolved occupancy disagreements. A controlled reversible road segment with entrances at both ends, direction signs and vehicles already inside. Entry barriers, lane direction indicators, vehicle warning displays and operator alert transmitter. Lane occupancy detectors, entry and exit counters, barrier position sensors and controller acknowledgement receiver.",
+  "cascading_problems": "A detector fails while a vehicle is inside, so the controller cannot prove that the lane is clear. One entrance receives the direction update late and must remain closed until its state is reconciled. Waiting vehicles queue onto a nearby intersection and require separate queue management.",
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "authored_match",
+    "image": "scenario33.png"
+  },
+  "review_status": "proposed_addition_needs_faculty_review",
+  "source_location": {
+    "file": "scenarios.json",
+    "record": 33
+  }
+}

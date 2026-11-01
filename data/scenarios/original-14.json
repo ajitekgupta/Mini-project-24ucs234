@@ -1,0 +1,28 @@
+{
+  "internal_id": "original-14",
+  "number": 14,
+  "origin": "original_report",
+  "title": "Traffic signal is not visible due to fog or rain or other natural phenomena.",
+  "situation": "Traffic signal is not visible due to fog or rain or other natural phenomena.",
+  "entities": "1. Traffic Signals 2. Vehicles",
+  "communication_type": "Inter Vehicle & Traffic Signals Communication",
+  "description": "Due to fog, mist, rain or other natural phenomena, traffic signal might not be visible.",
+  "dialogue_prompts": "1. Is there a conflict? No, Knowledge of current state of traffic signal by every vehicle is individual. 2. Is there a common problem to be solved? No, The info-seeking is currently been pursued to know state of traffic signal ahead.",
+  "source_proposed_solutions": "1. Traffic signal employs a socket-like service with vehicles in its area of consideration to communicate. 2. Alternate solution can be implemented as inter vehicle communication, message passing from ones nearest to traffic signal to the end of the road stretch.",
+  "peas": "1. Performance Measure - Basic information like signal state is conveyed to the vehicle 2. Environment - Due to unfavourable weather conditions or man-made situations, traffic signal is not visible to the vehicle. 3. Actuator - Signal transmitter in the traffic signal, Signal Display in the vehicle 4. Sensor - Signal sensor in the vehicle",
+  "cascading_problems": "1.",
+  "other_sections": {},
+  "candidate_dialogue_type": null,
+  "label_reason": null,
+  "diagram_mapping": {
+    "status": "unverified",
+    "image": null
+  },
+  "review_status": "machine_extracted_needs_review",
+  "source_location": {
+    "file": "Scenarios (1).pdf",
+    "pages": [
+      17
+    ]
+  }
+}
