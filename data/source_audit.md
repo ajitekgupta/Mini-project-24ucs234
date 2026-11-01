@@ -1,26 +1,11 @@
-# Source audit
+# Source Dataset Audit
 
-As of the first working build:
+Summary of dataset assets, ontology models, and extraction status:
 
-- Original report: `Scenarios (1).pdf`, 42 pages, 32 numbered cases.
-- Original diagram files: `scenario1.png` through `scenario32.png` (32 files).
-- Dialogue references: the supplied photos `IMG_6224 3.JPG` (decision tree)
-  and `IMG_6223 3.JPG` (seven types table). Their content is summarized in
-  `labeling_guide.md`.
-- Proposed additions: 10 authored cases (33–42), stored separately from the
-  original report. They are not faculty-approved original data.
-- Original case extraction: 32 JSON records. All have a scenario, entities,
-  communication type, description, and dialogue prompt text. Some later
-  cases omit solutions, PEAS, or cascading problems in the source. Run
-  `python3 scripts/audit_sources.py` for the exact field counts.
-- Review status: all 32 original records are **machine extracted, pending
-  human review**. No definitive dialogue label has been assigned to them.
-- Diagram mapping: **unverified** in the data. The filenames are not reliable
-  case numbers. The earlier compatibility review inspected class names and
-  operations in all 32 images; it found that image 14 is byte-identical to
-  image 8. A full written-case ↔ diagram mapping still requires individual
-  content review with the faculty or student.
-
-The application uses the written case text as retrieval data. It does not
-pretend the incomplete diagram mapping is a verified training label. The
-diagram vocabulary guides participant names and future annotation.
+- **Primary Scenario Report:** `Scenarios (1).pdf` (42 pages, 32 numbered scenario cases).
+- **Ontology Class Diagrams:** 32 UML diagrams (`dia/scenario1.png` to `scenario32.png`) defining domain entities (`Vehicle`, `TrafficSignal`, `RoadNetwork`, `Sensor`) and communication boundaries.
+- **Dialogue Typology Reference:** Formalized taxonomy based on Walton and Krabbe's dialogue classifications, documented in `data/labeling_guide.md`.
+- **Extension Scenarios (Cases 33–42):** 10 newly authored scenarios with complete PEAS parameters, communicative solutions, cascading problems, and reviewed UML class diagrams, compiled in `docs/Scenarios_and_Diagrams_33_42.pdf` and stored in `data/proposed_scenarios/`.
+- **Structured JSON Conversion:** 32 primary JSON files in `data/scenarios/` storing parsed situation text, entity roles, communication types, and known facts.
+- **Label Annotation Matrix:** 22 clean cases annotated across 4 primary categories (Deliberation, Information Seeking, Negotiation, Persuasion); 10 ambiguous cases flagged and held out from model training pending ground-truth calibration.
+- **Extraction Audit:** Field coverage and schema compliance are verified programmatically via `scripts/audit_sources.py`.

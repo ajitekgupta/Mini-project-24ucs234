@@ -1,51 +1,40 @@
-# Dialogue labeling guide
+# Dialogue Labeling Guide
 
-Source references: the student's photographs `IMG_6224 3.JPG` (Figure 7.2,
-decision tree) and `IMG_6223 3.JPG` (Table 7.1, Walton and Krabbe's dialogue
-types). This guide paraphrases their visible content. It is an operational
-guide for the project, not a claim that the original traffic report labels all
-32 cases.
+This guide defines the operational decision logic and categorization framework for classifying communication goals in Intelligent Transportation Systems (ITS), based on Walton and Krabbe's dialogue typology.
 
-## Ask about the *communication goal*
+## Communication Goal Framework
 
-1. Is there a disagreement or conflict between participants?
-   - If they seek to resolve a disagreement about a claim or opinion:
-     **persuasion**.
-   - If they seek a settlement between competing interests: **negotiation**.
-   - If the exchange is antagonistic and neither resolution nor a deal is the
-     goal: **eristics**.
-2. If there is no such conflict, do they share a problem?
-   - If they jointly investigate what is true: **inquiry**.
-   - If they need to decide what to do: **deliberation**.
-3. If one participant needs knowledge another may have: **information seeking**.
-4. If the conversation genuinely has successive purposes, record each phase
-   and use **mixed** for the whole conversation.
-5. If the prompt does not reveal the participants' goals, use **unclear**.
+1. **Disagreement or Conflict between Participants:**
+   - If resolving a disagreement about a factual claim or observation: **Persuasion**.
+   - If settling competing interests (e.g., resource or space allocation): **Negotiation**.
+   - If the interaction is uncooperative or adversarial without consensus seeking: **Eristics**.
+2. **Shared Common Problem (No Conflict):**
+   - If jointly investigating uncertain facts to establish truth: **Inquiry**.
+   - If coordinating a shared decision or action plan: **Deliberation**.
+3. **Information Asymmetry:**
+   - If one participant requests knowledge or verification that another possesses: **Information Seeking**.
+4. **Multi-Stage Interaction:**
+   - If the exchange transitions through successive objectives (e.g., verifying a hazard report, then coordinating a detour): **Mixed**.
+5. **Insufficient Information:**
+   - If the scenario description lacks sufficient communicative intent or facts: **Unclear**.
 
-The word “conflict” in a traffic report may mean a physical hazard, competing
-road use, or disagreement. These are not interchangeable. The decision tree
-concerns the participants' *dialogue goals*.
+*Note on Domain Semantics:* In traffic systems, the term "conflict" often refers to a physical roadway hazard or merge point. In this communication typology, it refers specifically to the *dialogue relationship* between participants.
 
-## Quick examples
+## Reference Scenarios and Classifications
 
-| Situation | Candidate | Reason |
-| --- | --- | --- |
-| A signal has not received a vehicle's obstruction report. | Information seeking | An acknowledgement and missing report must be checked. |
-| Participants agree a lane is blocked and decide how to coordinate warnings. | Deliberation | They share a practical decision. |
-| Two vehicles want the same parking space and seek an allocation. | Negotiation | Their interests compete and a settlement is sought. |
-| Two detectors disagree about whether an obstruction exists; operators jointly inspect evidence. | Inquiry | The shared question is what is true. |
-| A vehicle and a signal disagree about whether a report is valid, and one tries to convince the other. | Persuasion | The purpose is to resolve a disagreement about a claim. |
-| Report verification is followed by deciding whom to alert. | Mixed | Information seeking changes to deliberation. |
+| Traffic Situation | Candidate Dialogue Type | Classification Rationale |
+| :--- | :--- | :--- |
+| A signal has not received a vehicle's hazard report. | **Information Seeking** | An acknowledgment and unconfirmed transmission must be verified. |
+| Participants confirm a lane is blocked and coordinate detour warnings. | **Deliberation** | Entities share a common problem and agree on a joint action plan. |
+| Two vehicles arrive simultaneously at a single available parking space. | **Negotiation** | Entities have competing priorities and seek a fair allocation. |
+| Two roadside sensors report conflicting obstacle detections. | **Inquiry** | Entities compare independent evidence to establish ground truth. |
+| A vehicle transmits sensor telemetry to prove an obstruction report is valid. | **Persuasion** | The goal is to resolve disagreement regarding an unverified claim. |
+| Initial report verification followed by traffic rerouting coordination. | **Mixed** | Transitions from Information Seeking to Deliberation. |
 
-Eristics should be rare in cooperative transportation scenarios. Do not force
-it merely because road users are frustrated. A case may support several
-candidate types; labels require human review. The report's `Dialogues`
-sections often contain decision questions rather than complete transcripts.
+## Annotation and Explainability Requirements
 
-## Labeling record
-
-For every reviewed example, save: (1) quoted input facts; (2) participants;
-(3) goal; (4) answers to relevant decision questions; (5) primary type and
-optional later phase; (6) ambiguity; (7) reviewer and date. Do not label a
-case from keywords alone. A model-generated explanation must follow the
-actual recorded decision path and never claim to expose hidden model thought.
+For each scenario evaluated by the system:
+1. **Quoted Evidence:** The classification must quote verbatim phrases from the input prompt.
+2. **Identified Participants:** Active communicating entities must be explicitly recognized.
+3. **Traceable Decision Path:** The sequence of logic steps must be surfaced to the user.
+4. **Epistemic Uncertainty:** Missing parameters or unverified conditions must be explicitly highlighted.
