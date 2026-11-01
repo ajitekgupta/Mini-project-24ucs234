@@ -8,4 +8,8 @@ __pycache__/
 MEETING_DEMOS.md
 PRESENT_TO_SIR.md
 RUN_FROM_DESKTOP.md
-*.pdf
+XAI_ITS_*.pdf
+Explainable_AI_*.pdf
+
+# Allow the faculty-assigned scenarios PDF
+!docs/Scenarios_and_Diagrams_33_42.pdf

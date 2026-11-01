@@ -61,11 +61,11 @@ The source report contained Yes/No analytical answers rather than explicit categ
 * **10 Ambiguous Scenarios:** Cases 4, 11, 21, 22, and 23–28 involve conditional goals, multi-stage interactions, or describe physical roadway hazards without clear communicative intent.
 * **Academic Integrity Decision:** These 10 ambiguous cases were deliberately **held out from model training** pending faculty review. Fabricating labels for ambiguous cases would introduce artificial bias into the model.
 
-### 4.3 Why Proposed Scenarios 33–42 Are Kept Separate and Optional
-A secondary set of 10 authored scenarios (cases 33 to 42) exists in `data/proposed_scenarios/`:
-* **Curriculum Boundary:** The official course curriculum was defined around the original 32 scenarios.
-* **Separation of Concerns:** To avoid contaminating the core evaluation, cases 33–42 are excluded from model training.
-* **Interactive Toggle:** In the web interface and CLI, an optional checkbox (`Include proposed cases 33–42`) allows users to expand the TF-IDF case retrieval pool from 32 to 42 records without altering model weights.
+### 4.3 Faculty-Assigned Extension: Scenarios 33–42
+As instructed by the faculty supervisor, ten comprehensive new ITS scenarios (cases 33 to 42) were authored and modeled with complete PEAS specifications, communication dialogues, solutions, cascading problems, and reviewed UML class diagrams:
+* **Compiled Document:** The full illustrated document containing all 10 scenarios and their 10 class diagrams is preserved in [`docs/Scenarios_and_Diagrams_33_42.pdf`](docs/Scenarios_and_Diagrams_33_42.pdf).
+* **Machine-Readable Conversion:** All 10 authored cases are converted into standardized JSON format in `data/proposed_scenarios/proposed-33.json` to `proposed-42.json`.
+* **Interactive Reference Extension:** In the web interface and CLI, an optional checkbox (`Include proposed cases 33–42`) allows users to expand the TF-IDF retrieval knowledge base from 32 to 42 records to benchmark new inputs against these newly authored situations.
 
 ---
 
